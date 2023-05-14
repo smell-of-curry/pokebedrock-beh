@@ -1,0 +1,1 @@
+{"format_version":"1.19.62","minecraft:recipe_shaped":{"description":{"identifier":"pokeb:fire_stone_plate"},"tags":["crafting_table"],"pattern":["M M","MMM","MMM"],"key":{"M":{"item":"pokeb:fire-stone"}},"result":{"item":"pokeb:fire_stone_plate","count":1}}}

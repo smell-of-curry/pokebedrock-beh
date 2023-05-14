@@ -1,0 +1,1 @@
+{"format_version":"1.19.62","minecraft:recipe_shaped":{"description":{"identifier":"pokeb:cooking_pot"},"tags":["crafting_table"],"pattern":[" X "," P ","P P"],"key":{"X":{"item":"minecraft:cauldron"},"P":{"item":"pokeb:aluminum_ingot"}},"result":{"item":"pokeb:cooking_pot","count":1}}}

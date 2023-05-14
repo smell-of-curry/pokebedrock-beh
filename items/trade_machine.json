@@ -1,0 +1,18 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "pokeb:trade_machine_placer",
+      "category": "items"
+    },
+    "components": {
+      "minecraft:max_stack_size": 64,
+      "minecraft:block_placer": {
+        "block": "pokeb:trade_machine"
+      },
+      "minecraft:icon": {
+        "texture": "trade_machine"
+      }
+    }
+  }
+}

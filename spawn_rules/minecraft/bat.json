@@ -1,0 +1,10 @@
+{
+  "format_version": "1.17.0",
+  "minecraft:spawn_rules": {
+    "description": {
+      "identifier": "minecraft:bat",
+      "population_control": "ambient"
+    },
+    "conditions": []
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "format_version": "1.19.62",
+  "minecraft:recipe_shaped": {
+    "description": { "identifier": "pokeb:aluminum_block" },
+    "tags": ["crafting_table"],
+    "pattern": ["XXX", "XXX", "XXX"],
+    "key": { "X": { "tag": "forge:ingots/aluminum" } },
+    "result": { "item": "pokeb:aluminum_block", "count": 1 }
+  }
+}

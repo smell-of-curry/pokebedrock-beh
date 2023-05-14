@@ -1,0 +1,23 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "pokeb:blue_apricorn",
+          "weight": 4
+        },
+        {
+          "type": "item",
+          "name": "pokeb:blue_apricorn_sapling_placer",
+          "weight": 3
+        },
+        {
+          "type": "empty",
+          "weight": 10
+        }
+      ]
+    }
+  ]
+}

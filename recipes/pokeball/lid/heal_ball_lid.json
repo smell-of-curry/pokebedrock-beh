@@ -1,0 +1,1 @@
+{"format_version":"1.19.62","minecraft:recipe_shaped":{"description":{"identifier":"pokeb:poke_ball_lid"},"tags":["crafting_table"],"pattern":["ABA"],"key":{"A":{"item":"pokeb:cooked_white_apricorn"},"B":{"item":"pokeb:cooked_pink_apricorn"}},"result":{"item":"pokeb:poke_ball_lid","count":5,"nbt":{"PokeBallID":"heal_ball"}}}}

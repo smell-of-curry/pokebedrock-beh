@@ -1,0 +1,1 @@
+{"format_version":"1.19.62","minecraft:recipe_shaped":{"description":{"identifier":"pokeb:cloning_machine"},"tags":["crafting_table"],"pattern":["GCO"],"key":{"G":{"item":"pokeb:green_tank"},"O":{"item":"pokeb:orange_tank"},"C":{"item":"pokeb:cloner_cord"}},"result":{"item":"pokeb:cloning_machine","count":1}}}

@@ -1,0 +1,24 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:ore_feature": {
+	  "description": {
+		"identifier": "pokeb:moon_stone_ore_feature"
+	  },
+	  "count": 2,
+	  "replace_rules": [
+		{
+		  "places_block": {
+			"name": "pokeb:moon_stone_ore",
+			"states": {}
+		  },
+		  "may_replace": [
+			{
+			  "name": "minecraft:stone",
+			  "states": {}
+			}
+		  ]
+		}
+	  ]
+	}
+  }
+  

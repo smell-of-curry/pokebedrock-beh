@@ -1,0 +1,13 @@
+{
+  "format_version": "1.19.62",
+  "minecraft:recipe_shaped": {
+    "description": { "identifier": "pokeb:trade_monitor" },
+    "tags": ["crafting_table"],
+    "pattern": ["AAA", "AGA", "AAA"],
+    "key": {
+      "A": { "item": "pokeb:aluminum_ingot" },
+      "G": { "item": "minecraft:glass_pane" }
+    },
+    "result": { "item": "pokeb:trade_monitor", "count": 1 }
+  }
+}

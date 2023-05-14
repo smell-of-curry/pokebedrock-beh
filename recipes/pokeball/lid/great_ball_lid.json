@@ -1,0 +1,16 @@
+{
+  "format_version": "1.19.62",
+  "minecraft:recipe_shaped": {
+    "description": { "identifier": "ball:greatball_lid" },
+    "tags": ["crafting_table"],
+    "pattern": ["ABA"],
+    "key": {
+      "A": { "item": "pokeb:cooked_blue_apricorn" },
+      "B": { "item": "pokeb:cooked_red_apricorn" }
+    },
+    "result": {
+      "item": "ball:greatball_lid",
+      "count": 3
+    }
+  }
+}

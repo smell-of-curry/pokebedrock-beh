@@ -1,0 +1,10 @@
+{
+  "format_version": "1.19.62",
+  "minecraft:recipe_shaped": {
+    "description": { "identifier": "pokeb:fire-stone" },
+    "tags": ["crafting_table"],
+    "pattern": ["SSS", "SSS", "SSS"],
+    "key": { "S": { "item": "pokeb:fire_stone_shard" } },
+    "result": { "item": "pokeb:fire-stone", "count": 1 }
+  }
+}

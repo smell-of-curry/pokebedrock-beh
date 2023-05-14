@@ -1,0 +1,10 @@
+{
+  "format_version": "1.19.62",
+  "minecraft:recipe_shaped": {
+    "description": { "identifier": "pokeb:iron_base" },
+    "tags": ["crafting_table"],
+    "pattern": ["###"],
+    "key": { "#": { "item": "minecraft:iron_ingot" } },
+    "result": { "item": "pokeb:iron_base", "count": 5 }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "format_version": "1.19.62",
+  "minecraft:recipe_shaped": {
+    "description": { "identifier": "pokeb:silver_base" },
+    "tags": ["crafting_table"],
+    "pattern": ["###"],
+    "key": { "#": { "tag": "forge:ingots/silver" } },
+    "result": { "item": "pokeb:silver_base", "count": 5 }
+  }
+}

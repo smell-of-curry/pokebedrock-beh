@@ -1,0 +1,1 @@
+{"format_version":"1.19.62","minecraft:recipe_shaped":{"description":{"identifier":"pokeb:new_running_boots"},"tags":["crafting_table"],"pattern":["DBD","I I","F F"],"key":{"B":{"item":"pokeb:old_running_boots"},"D":{"item":"minecraft:diamond"},"I":{"item": "minecraft:iron_ingot"},"F":{"item":"minecraft:feather"}},"result":{"item":"pokeb:new_running_boots","count":1}}}

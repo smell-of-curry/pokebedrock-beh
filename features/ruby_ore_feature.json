@@ -1,0 +1,66 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:ore_feature": {
+    "description": {
+      "identifier": "pokeb:ruby_ore_feature"
+    },
+    "count": 6,
+    "places_block": "pokeb:ruby_ore",
+    "may_replace": [
+      {
+        "name": "minecraft:stone",
+        "states": {
+          "stone_type": "andesite"
+        }
+      },
+      {
+        "name": "minecraft:stone",
+        "states": {
+          "stone_type": "andesite_smooth"
+        }
+      },
+      {
+        "name": "minecraft:stone",
+        "states": {
+          "stone_type": "diorite"
+        }
+      },
+      {
+        "name": "minecraft:stone",
+        "states": {
+          "stone_type": "diorite_smooth"
+        }
+      },
+      {
+        "name": "minecraft:stone",
+        "states": {
+          "stone_type": "granite"
+        }
+      },
+      {
+        "name": "minecraft:stone",
+        "states": {
+          "stone_type": "granite_smooth"
+        }
+      },
+      {
+        "name": "minecraft:stone",
+        "states": {
+          "stone_type": "stone"
+        }
+      },
+      {
+        "name": "minecraft:netherrack",
+        "states": {}
+      },
+      {
+        "name": "minecraft:netherrack",
+        "states": {}
+      },
+      {
+        "name": "minecraft:end_stone",
+        "states": {}
+      }
+    ]
+  }
+}

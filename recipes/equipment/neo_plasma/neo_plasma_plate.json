@@ -1,0 +1,1 @@
+{"format_version":"1.19.62","minecraft:recipe_shaped":{"description":{"identifier":"pokeb:neo_plasma_plate"},"tags":["crafting_table"],"pattern":["C C","CCC","SSS"],"key":{"C":{"tag":"forge:gems/crystal"},"S":{"tag":"forge:gems/silicon"}},"result":{"item":"pokeb:neo_plasma_plate","count":1}}}

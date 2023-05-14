@@ -1,0 +1,1 @@
+{"format_version":"1.19.62","minecraft:recipe_shapeless":{"description":{"identifier":"pokeb:porygon_piece"},"tags":["crafting_table"],"ingredients":[{"item":"pokeb:porygon_leg"},{"item":"pokeb:porygon_tail"},{"item":"pokeb:porygon_body"},{"item":"pokeb:porygon_head"}],"result":{"item":"pokeb:porygon_piece"}}}

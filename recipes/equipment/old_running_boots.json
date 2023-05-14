@@ -1,0 +1,14 @@
+{
+  "format_version": "1.19.62",
+  "minecraft:recipe_shaped": {
+    "description": { "identifier": "pokeb:old_running_boots" },
+    "tags": ["crafting_table"],
+    "pattern": ["IBI", "I I", "F F"],
+    "key": {
+      "B": { "item": "minecraft:leather_boots" },
+      "I": { "item": "minecraft:iron_ingot" },
+      "F": { "item": "minecraft:feather" }
+    },
+    "result": { "item": "pokeb:old_running_boots", "count": 1 }
+  }
+}

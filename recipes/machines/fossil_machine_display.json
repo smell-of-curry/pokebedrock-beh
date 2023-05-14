@@ -1,0 +1,1 @@
+{"format_version":"1.19.62","minecraft:recipe_shaped":{"description":{"identifier":"pokeb:fossil_machine_display"},"tags":["crafting_table"],"pattern":[" R ","ROR"," R "],"key":{"O":{"item":"minecraft:obsidian"},"R":{"item": "minecraft:redstone"}},"result":{"item":"pokeb:fossil_machine_display","count":1}}}

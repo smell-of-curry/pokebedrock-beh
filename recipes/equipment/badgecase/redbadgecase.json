@@ -1,0 +1,1 @@
+{"format_version":"1.19.62","minecraft:recipe_shaped":{"description":{"identifier":"pokeb:redbadgecase"},"tags":["crafting_table"],"pattern":["RRR","BBB","RRR"],"key":{"R":{"item":"pokeb:cooked_red_apricorn"},"B":{"item":"pokeb:cooked_black_apricorn"}},"result":{"item":"pokeb:redbadgecase","count":1}}}

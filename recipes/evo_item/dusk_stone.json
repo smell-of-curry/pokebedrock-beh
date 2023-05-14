@@ -1,0 +1,10 @@
+{
+  "format_version": "1.19.62",
+  "minecraft:recipe_shaped": {
+    "description": { "identifier": "pokeb:dusk-stone" },
+    "tags": ["crafting_table"],
+    "pattern": ["SSS", "SSS", "SSS"],
+    "key": { "S": { "item": "pokeb:dusk_stone_shard" } },
+    "result": { "item": "pokeb:dusk-stone", "count": 1 }
+  }
+}

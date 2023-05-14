@@ -1,0 +1,15 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "pokeb:white_apricorn",
+      "category": "Nature"
+    },
+    "components": {
+      "minecraft:max_stack_size": 64,
+      "minecraft:icon": {
+				"texture": "white_apricorn"
+			}
+    }
+  }
+}

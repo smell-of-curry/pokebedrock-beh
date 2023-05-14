@@ -1,0 +1,1 @@
+{"format_version":"1.19.62","minecraft:recipe_shapeless":{"description":{"identifier":"pokeb:curry_mushroom"},"tags":["crafting_table"],"ingredients":[{"item":"pokeb:tiny_mushroom"},{"item":"minecraft:brown_mushroom"},{"item":"minecraft:red_mushroom"}],"result":{"item":"pokeb:curry_mushroom","count":1}}}

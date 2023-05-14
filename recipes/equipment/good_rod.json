@@ -1,0 +1,1 @@
+{"format_version":"1.19.62","minecraft:recipe_shaped":{"description":{"identifier":"pokeb:good_rod"},"tags":["crafting_table"],"pattern":["  B"," BT","B P"],"key":{"B":{"item":"minecraft:blaze_rod"},"T":{"item":"minecraft:string"},"P":{"type":"forge:nbt","item":"pokeb:poke_ball","nbt":{"PokeBallID":"ultra_ball"}}},"result":{"item":"pokeb:good_rod","count":1}}}

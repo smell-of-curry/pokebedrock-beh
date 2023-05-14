@@ -1,0 +1,1 @@
+{"format_version":"1.19.62","minecraft:recipe_shaped":{"description":{"identifier":"pokeb:fossil_cleaner"},"tags":["crafting_table"],"pattern":["AAA","AAA","RGR"],"key":{"A":{"item":"pokeb:aluminum_ingot"},"G":{"item":"minecraft:glass_pane"},"R":{"item": "minecraft:redstone"}},"result":{"item":"pokeb:fossil_cleaner","count":1}}}

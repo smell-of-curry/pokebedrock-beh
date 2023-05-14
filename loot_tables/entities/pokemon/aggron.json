@@ -1,0 +1,45 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:iron_ingot",
+          "weight": 1,
+          "functions": [
+            { "function": "set_count", "count": { "min": 2, "max": 4 } }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:stone",
+          "weight": 0.5,
+          "functions": [
+            { "function": "set_count", "count": { "min": 1, "max": 2 } },
+            {
+              "function": "set_data",
+              "data": 4
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "pokeb:silver_ore",
+          "weight": 0.3,
+          "functions": [
+            { "function": "set_count", "count": { "min": 1, "max": 2 } }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "pokeb:lagging_tail",
+          "weight": 0.1,
+          "functions": [
+            { "function": "set_count", "count": { "min": 1, "max": 1 } }
+          ]
+        }
+      ]
+    }
+  ]
+}

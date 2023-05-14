@@ -1,0 +1,15 @@
+{
+  "format_version": "1.19.62",
+  "minecraft:recipe_shaped": {
+    "description": { "identifier": "pokeb:trade_machine_placer" },
+    "tags": ["crafting_table"],
+    "pattern": [" M ", "LPR"],
+    "key": {
+      "M": { "item": "pokeb:trade_monitor" },
+      "L": { "item": "pokeb:trade_holder_left" },
+      "P": { "item": "pokeb:trade_panel" },
+      "R": { "item": "pokeb:trade_holder_right" }
+    },
+    "result": { "item": "pokeb:trade_machine_placer", "count": 1 }
+  }
+}

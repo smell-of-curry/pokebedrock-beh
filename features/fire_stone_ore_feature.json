@@ -1,0 +1,23 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:ore_feature": {
+    "description": {
+      "identifier": "ss:fire_stone_ore_feature"
+    },
+    "count": 2,
+    "replace_rules": [
+      {
+        "places_block": {
+          "name": "pokeb:fire_stone_ore",
+          "states": {}
+        },
+        "may_replace": [
+          {
+            "name": "minecraft:stone",
+            "states": {}
+          }
+        ]
+      }
+    ]
+  }
+}

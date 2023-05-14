@@ -1,0 +1,1 @@
+{"format_version":"1.19.62","minecraft:recipe_shaped":{"description":{"identifier":"pokeb:mach_bike"},"tags":["crafting_table"],"pattern":["  H"," F ","W W"],"key":{"H":{"item":"pokeb:handles"},"F":{"item":"pokeb:mach_bike_frame"},"W":{"item":"pokeb:wheel"}},"result":{"item":"pokeb:mach_bike","count":1}}}

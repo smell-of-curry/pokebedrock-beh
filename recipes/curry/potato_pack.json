@@ -1,0 +1,1 @@
+{"format_version":"1.19.62","minecraft:recipe_shapeless":{"description":{"identifier":"pokeb:curry_potato"},"tags":["crafting_table"],"ingredients":[{"item":"minecraft:potato"},{"item":"minecraft:potato"},{"item":"minecraft:potato"},{"item":"minecraft:potato"},{"item":"minecraft:potato"}],"result":{"item":"pokeb:curry_potato","count":1}}}

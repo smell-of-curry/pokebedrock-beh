@@ -1,0 +1,1 @@
+{"format_version":"1.19.62","minecraft:recipe_shaped":{"description":{"identifier":"pokeb:aluminum_base"},"tags":["crafting_table"],"pattern":["###"],"key":{"#":{"item":"pokeb:aluminum_ingot"}},"result":{"item":"pokeb:aluminum_base","count":5}}}

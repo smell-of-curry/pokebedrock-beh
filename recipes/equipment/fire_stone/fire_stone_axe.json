@@ -1,0 +1,13 @@
+{
+  "format_version": "1.19.62",
+  "minecraft:recipe_shaped": {
+    "description": { "identifier": "pokeb:fire_stone_axe" },
+    "tags": ["crafting_table"],
+    "pattern": ["MM ", "MS ", " S "],
+    "key": {
+      "M": { "item": "pokeb:fire-stone" },
+      "S": { "item": "pokeb:aluminum_ingot" }
+    },
+    "result": { "item": "pokeb:fire_stone_axe", "count": 1 }
+  }
+}

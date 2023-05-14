@@ -1,0 +1,174 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:tree_feature": {
+        "description": {
+            "identifier": "pokeb:black_apricorn_tree_feature"
+        },
+        "fancy_trunk": {
+            "trunk_height": {
+                "base": 7,
+                "variance": 4,
+                "scale": 0.9
+            },
+            "trunk_width": 1,
+            "trunk_block": {
+                "name": "pokeb:apricorn_log"
+            },
+            "branches": {
+                "slope": 0.2,
+                "density": 0.7,
+                "min_altitude_factor": 0
+            },
+            "width_scale": 3,
+            "foliage_altitude_factor": 0
+        },
+        "fancy_canopy": {
+            "height": 4,
+            "radius": 4,
+            "leaf_block": {
+                "name": "pokeb:black_apricorn_leaves",
+                "states": {
+                    "persistent_bit": true,
+                    "update_bit": false
+                }
+            }
+        },
+        "base_block": [
+            "minecraft:dirt",
+            {
+                "name": "minecraft:dirt",
+                "states": {
+                    "dirt_type": "coarse"
+                }
+            }
+        ],
+        "may_grow_on": [
+            "minecraft:dirt",
+            "minecraft:grass",
+            {
+                "name": "minecraft:dirt",
+                "states": {
+                    "dirt_type": "coarse"
+                }
+            },
+            {
+                "name": "minecraft:farmland",
+                "states": {
+                    "moisturized_amount": 0
+                }
+            },
+            {
+                "name": "minecraft:farmland",
+                "states": {
+                    "moisturized_amount": 1
+                }
+            },
+            {
+                "name": "minecraft:farmland",
+                "states": {
+                    "moisturized_amount": 2
+                }
+            },
+            {
+                "name": "minecraft:farmland",
+                "states": {
+                    "moisturized_amount": 3
+                }
+            },
+            {
+                "name": "minecraft:farmland",
+                "states": {
+                    "moisturized_amount": 4
+                }
+            },
+            {
+                "name": "minecraft:farmland",
+                "states": {
+                    "moisturized_amount": 5
+                }
+            },
+            {
+                "name": "minecraft:farmland",
+                "states": {
+                    "moisturized_amount": 6
+                }
+            },
+            {
+                "name": "minecraft:farmland",
+                "states": {
+                    "moisturized_amount": 7
+                }
+            },
+            {
+                "name": "minecraft:mud"
+            }
+        ],
+        "may_replace": [
+            "minecraft:air",
+            {
+                "name": "minecraft:leaves",
+                "states": {
+                    "old_leaf_type": "oak"
+                }
+            },
+            {
+                "name": "minecraft:leaves",
+                "states": {
+                    "old_leaf_type": "spruce"
+                }
+            },
+            {
+                "name": "minecraft:leaves",
+                "states": {
+                    "old_leaf_type": "birch"
+                }
+            },
+            {
+                "name": "minecraft:leaves",
+                "states": {
+                    "old_leaf_type": "jungle"
+                }
+            },
+            {
+                "name": "minecraft:leaves2",
+                "states": {
+                    "new_leaf_type": "acacia"
+                }
+            },
+            {
+                "name": "minecraft:leaves2",
+                "states": {
+                    "new_leaf_type": "dark_oak"
+                }
+            },
+            {
+                "name": "minecraft:dirt"
+            },
+            {
+                "name": "minecraft:grass"
+            },
+            {
+                "name": "minecraft:tallgrass"
+            },
+            {
+                "name": "minecraft:double_plant"
+            },
+            {
+                "name": "minecraft:snow_layer"
+            }
+        ],
+        "may_grow_through": [
+            "minecraft:dirt",
+            "minecraft:grass",
+            {
+                "name": "minecraft:dirt",
+                "states": {
+                    "dirt_type": "coarse"
+                }
+            },
+            {
+                "name": "minecraft:mud"
+            }
+        ]
+    }
+}

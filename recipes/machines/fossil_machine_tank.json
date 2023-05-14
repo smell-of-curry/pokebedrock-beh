@@ -1,0 +1,1 @@
+{"format_version":"1.19.62","minecraft:recipe_shaped":{"description":{"identifier":"pokeb:fossil_machine_tank"},"tags":["crafting_table"],"pattern":["GWG","GWG","GWG"],"key":{"G":{"item":"minecraft:glass_pane"},"W":{"item":"minecraft:water_bucket"}},"result":{"item":"pokeb:fossil_machine_tank","count":1}}}

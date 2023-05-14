@@ -1,0 +1,1 @@
+{"format_version":"1.19.62","minecraft:recipe_shaped":{"description":{"identifier":"pokeb:sapphire_block"},"tags":["crafting_table"],"pattern":["XXX","XXX","XXX"],"key":{"X":{"tag":"forge:gems/sapphire"}},"result":{"item":"pokeb:sapphire_block","count":1}}}

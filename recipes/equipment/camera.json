@@ -1,0 +1,1 @@
+{"format_version":"1.19.62","minecraft:recipe_shaped":{"description":{"identifier":"pokeb:camera"},"tags":["crafting_table"],"pattern":["  B","AGA","ARA"],"key":{"A":{"item":"pokeb:aluminum_ingot"},"R":{"item":"minecraft:redstone_torch"},"G":{"item":"minecraft:glass_pane"},"B":{"item":"minecraft:stone_button"}},"result":{"item":"pokeb:camera","count":1}}}

@@ -1,0 +1,14 @@
+{
+  "format_version": "1.19.62",
+  "minecraft:recipe_shaped": {
+    "description": { "identifier": "pokeb:wailmer_pail" },
+    "tags": ["crafting_table"],
+    "pattern": ["BBB", " W ", "III"],
+    "key": {
+      "W": { "item": "minecraft:water_bucket" },
+      "I": { "item": "minecraft:iron_ingot" },
+      "B": { "item": "minecraft:bone" }
+    },
+    "result": { "item": "pokeb:wailmer_pail", "count": 1 }
+  }
+}

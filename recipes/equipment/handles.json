@@ -1,0 +1,1 @@
+{"format_version":"1.19.62","minecraft:recipe_shaped":{"description":{"identifier":"pokeb:handles"},"tags":["crafting_table"],"pattern":["LIL"," S "," S "],"key":{"L":{"item":"minecraft:leather"},"S":{"item":"pokeb:aluminum_ingot"},"I":{"item": "minecraft:iron_ingot"}},"result":{"item":"pokeb:handles","count":1}}}

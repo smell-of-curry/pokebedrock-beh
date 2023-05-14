@@ -1,0 +1,1 @@
+{"format_version":"1.19.62","minecraft:recipe_shaped":{"description":{"identifier":"pokeb:curry_herb"},"tags":["crafting_table"],"pattern":[" W ","WRW"," W "],"key":{"R":{"item":"pokeb:big_root"},"W":{"item":"minecraft:nether_wart"}},"result":{"item":"pokeb:curry_herb","count":1}}}

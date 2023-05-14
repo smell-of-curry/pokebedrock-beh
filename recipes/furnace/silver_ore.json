@@ -1,0 +1,1 @@
+{"format_version":"1.19.62","minecraft:recipe_furnace":{"description":{"identifier":"pokeb:silver_ingot"},"tags":["furnace"],"input":{"tag":"forge:ores/silver"},"output":"pokeb:silver_ingot"}}

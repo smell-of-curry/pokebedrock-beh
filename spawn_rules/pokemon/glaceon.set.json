@@ -1,0 +1,1 @@
+{"format_version":"1.8.0","minecraft:spawn_rules":{"description":{"identifier":"pokemon:glaceon","population_control":"animal"},"conditions":[{"minecraft:weight":{"default":1.165},"minecraft:spawns_on_surface":{},"minecraft:biome_filter":{"any_of":[{"all_of":[{"test":"has_biome_tag","operator":"==","value":"ice"}]}]},"minecraft:herd":{"min_size":1,"max_size":2}}]}}

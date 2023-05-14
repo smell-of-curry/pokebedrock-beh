@@ -1,0 +1,1 @@
+{"format_version":"1.19.62","minecraft:recipe_shaped":{"description":{"identifier":"pokeb:silver_sword"},"tags":["crafting_table"],"pattern":["M","M","S"],"key":{"M":{"tag":"forge:ingots/silver"},"S":{"item":"pokeb:aluminum_ingot"}},"result":{"item":"pokeb:silver_sword","count":1}}}

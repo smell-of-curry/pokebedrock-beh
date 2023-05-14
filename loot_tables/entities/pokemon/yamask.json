@@ -1,0 +1,1 @@
+{"pools":[{"rolls":1,"entries":[{"type":"item","name":"minecraft:chiseled_sandstone","weight":1,"functions":[{"function":"set_count","count":{"min":1,"max":2}}]},{"type":"item","name":"minecraft:soul_sand","weight":0.5,"functions":[{"function":"set_count","count":{"min":1,"max":1}}]}]}]}

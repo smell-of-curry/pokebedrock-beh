@@ -1,0 +1,1 @@
+{"format_version":"1.19.62","minecraft:recipe_furnace":{"description":{"identifier":"pokeb:moon_stone_shard"},"tags":["furnace","blast_furnace"],"input":{"item":"pokeb:moon_stone_ore"},"output":"pokeb:moon_stone_shard"}}

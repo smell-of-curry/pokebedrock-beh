@@ -1,0 +1,10 @@
+{
+  "format_version": "1.19.62",
+  "minecraft:recipe_shaped": {
+    "description": { "identifier": "pokeb:thunder-stone" },
+    "tags": ["crafting_table"],
+    "pattern": ["SSS", "SSS", "SSS"],
+    "key": { "S": { "item": "pokeb:thunder_stone_shard" } },
+    "result": { "item": "pokeb:thunder-stone", "count": 1 }
+  }
+}

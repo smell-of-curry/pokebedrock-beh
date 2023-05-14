@@ -1,0 +1,25 @@
+{
+  "format_version": "1.19.51",
+  "minecraft:item": {
+    "description": {
+      "identifier": "pokeb:gui"
+    },
+    "components": {
+      "minecraft:max_stack_size": 1,
+      "minecraft:hand_equipped": true,
+      "minecraft:foil": true,
+      "minecraft:icon": {
+        "texture": "gui_item"
+      },
+      "minecraft:display_name": {
+        "value": "§b§lGUI§r\n§l§bClick to Scroll, §l§aSneak + Click to Select\n"
+      },
+      "minecraft:cooldown": {
+        "category": "gui",
+        "duration": 0.1
+      },
+      "minecraft:should_despawn": false,
+      "minecraft:allow_off_hand": true
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:block": {
+    "description": {
+      "identifier": "pokeb:trade_machine",
+      "category": "Nature",
+      "properties": {
+        "wiki:rotation": [2, 3, 4, 5]
+      }
+    },
+    "events": {
+      "wiki:set_rotation": {
+        "set_block_property": {
+          "wiki:rotation": "(query.cardinal_facing_2d)"
+        }
+      }
+    },
+    "components": {
+      "minecraft:loot": "loot_tables/blocks/trade_machine.json",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "trade_machine",
+          "render_method": "alpha_test"
+        }
+      },
+      "minecraft:pick_collision": {
+        "origin": [-8, 0, -8],
+        "size": [16, 16, 16]
+      },
+      "minecraft:entity_collision": {
+        "origin": [-8, 0, -8],
+        "size": [16, 16, 16]
+      },
+      "minecraft:geometry": "geometry.trade_machine",
+      "minecraft:block_light_absorption": 0,
+      "minecraft:destroy_time": 3,
+      "minecraft:on_player_placing": {
+        "event": "wiki:set_rotation"
+      }
+    },
+    "permutations": [
+      {
+        "condition": "query.block_property('wiki:rotation') == 2",
+        "components": {
+          "minecraft:rotation": [0, 180, 0]
+        }
+      },
+      {
+        "condition": "query.block_property('wiki:rotation') == 3",
+        "components": {
+          "minecraft:rotation": [0, 0, 0]
+        }
+      },
+      {
+        "condition": "query.block_property('wiki:rotation') == 4",
+        "components": {
+          "minecraft:rotation": [0, 270, 0]
+        }
+      },
+      {
+        "condition": "query.block_property('wiki:rotation') == 5",
+        "components": {
+          "minecraft:rotation": [0, 90, 0]
+        }
+      }
+    ]
+  }
+}

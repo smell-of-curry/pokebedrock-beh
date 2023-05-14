@@ -1,0 +1,112 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:block": {
+    "description": {
+      "identifier": "pokeb:pc",
+      "category": "Nature",
+      "properties": {
+        "wiki:rotation": [2, 3, 4, 5],
+        "pokeb:is_in_use": [false, true]
+      }
+    },
+    "events": {
+      "wiki:set_rotation": {
+        "set_block_property": {
+          "wiki:rotation": "(query.cardinal_facing_2d)"
+        }
+      },
+      "pokeb:set_in_use": {
+        "set_block_property": {
+          "pokeb:is_in_use": true
+        }
+      },
+      "pokeb:set_not_use": {
+        "set_block_property": {
+          "pokeb:is_in_use": false
+        }
+      }
+    },
+    "components": {
+      "minecraft:loot": "loot_tables/blocks/pc.json",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "pc_blink",
+          "render_method": "alpha_test"
+        }
+      },
+      "minecraft:pick_collision": {
+        "origin": [-8, 0, -8],
+        "size": [16, 16, 16]
+      },
+      "minecraft:entity_collision": {
+        "origin": [-8, 0, -8],
+        "size": [16, 16, 16]
+      },
+      "minecraft:geometry": "geometry.pc",
+      "minecraft:block_light_absorption": 0,
+      "minecraft:destroy_time": 3,
+      "minecraft:on_player_placing": {
+        "event": "wiki:set_rotation"
+      },
+      "minecraft:on_interact": {
+        "event": "pokeb:set_in_use",
+        "target": "self"
+      }
+    },
+    "permutations": [
+      {
+        "condition": "query.block_property('wiki:rotation') == 2",
+        "components": {
+          "minecraft:rotation": [0, 180, 0]
+        }
+      },
+      {
+        "condition": "query.block_property('wiki:rotation') == 3",
+        "components": {
+          "minecraft:rotation": [0, 0, 0]
+        }
+      },
+      {
+        "condition": "query.block_property('wiki:rotation') == 4",
+        "components": {
+          "minecraft:rotation": [0, 270, 0]
+        }
+      },
+      {
+        "condition": "query.block_property('wiki:rotation') == 5",
+        "components": {
+          "minecraft:rotation": [0, 90, 0]
+        }
+      },
+      {
+        "condition": "query.block_property('pokeb:is_in_use') == true",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "pc_blink",
+              "render_method": "alpha_test"
+            }
+          },
+          "minecraft:ticking": {
+            "looping": false,
+            "range": [5, 5],
+            "on_tick": {
+              "event": "pokeb:set_not_use"
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('pokeb:is_in_use') == false",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "pc_sleep",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      }
+    ]
+  }
+}

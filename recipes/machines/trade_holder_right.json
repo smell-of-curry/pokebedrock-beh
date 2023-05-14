@@ -1,0 +1,13 @@
+{
+  "format_version": "1.19.62",
+  "minecraft:recipe_shaped": {
+    "description": { "identifier": "pokeb:trade_holder_right" },
+    "tags": ["crafting_table"],
+    "pattern": ["ARR", "RR "],
+    "key": {
+      "A": { "item": "ball:pokeball" },
+      "R": { "item": "pokeb:aluminum_ingot" }
+    },
+    "result": { "item": "pokeb:trade_holder_right", "count": 1 }
+  }
+}

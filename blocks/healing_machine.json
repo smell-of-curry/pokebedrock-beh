@@ -1,0 +1,29 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:block": {
+    "description": {
+      "identifier": "pokeb:healing_machine",
+      "category": "Nature"
+    },
+    "components": {
+      "minecraft:loot": "loot_tables/blocks/healing_machine.json",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "healing_machine",
+          "render_method": "alpha_test"
+        }
+      },
+      "minecraft:pick_collision": {
+        "origin": [-8, 0, -8],
+        "size": [16, 16, 16]
+      },
+      "minecraft:entity_collision": {
+        "origin": [-8, 0, -8],
+        "size": [16, 16, 16]
+      },
+      "minecraft:geometry": "geometry.healing_machine_0",
+      "minecraft:block_light_absorption": 0,
+      "minecraft:destroy_time": 3
+    }
+  }
+}

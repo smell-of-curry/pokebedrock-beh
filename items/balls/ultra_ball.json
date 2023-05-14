@@ -1,0 +1,37 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "ball:ultraball",
+      "category": "Nature"
+    },
+    "components": {
+      "minecraft:max_stack_size": 64,
+      "minecraft:projectile": {
+        "projectile_entity": "ball:ultraball"
+      },
+      "minecraft:throwable": {
+        "do_swing_animation": true,
+        "launch_power_scale": 2
+      },
+      "minecraft:on_use": {
+				"on_use": {
+					"event": "pokeb:throw",
+					"target": "self"
+				}
+			},
+      "minecraft:icon": {
+        "texture": "ultraball"
+      }
+    },
+		"events": {
+			"pokeb:throw": {
+				"run_command": {
+					"command": [
+						"playsound pokeball.throw"
+					]
+				}
+			}
+		}
+  }
+}

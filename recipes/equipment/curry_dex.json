@@ -1,0 +1,1 @@
+{"format_version":"1.19.62","minecraft:recipe_shapeless":{"description":{"identifier":"pokeb:curry_dex"},"tags":["crafting_table"],"ingredients":[{"item":"minecraft:book"},{"tag":"pokeb:curry_ingredient"}],"result":{"item":"pokeb:curry_dex"}}}

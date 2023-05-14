@@ -1,0 +1,10 @@
+{
+  "format_version": "1.19.62",
+  "minecraft:recipe_shaped": {
+    "description": { "identifier": "pokeb:aluminum_helmet" },
+    "tags": ["crafting_table"],
+    "pattern": ["MMM", "M M"],
+    "key": { "M": { "item": "pokeb:aluminum_ingot" } },
+    "result": { "item": "pokeb:aluminum_helmet", "count": 1 }
+  }
+}

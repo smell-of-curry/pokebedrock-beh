@@ -1,0 +1,1 @@
+{"format_version":"1.19.62","minecraft:recipe_shaped":{"description":{"identifier":"pokeb:cloner_cord"},"tags":["crafting_table"],"pattern":["OOO","RRR","OOO"],"key":{"R":{"item": "minecraft:redstone"},"O":{"item":"minecraft:obsidian"}},"result":{"item":"pokeb:cloner_cord","count":1}}}

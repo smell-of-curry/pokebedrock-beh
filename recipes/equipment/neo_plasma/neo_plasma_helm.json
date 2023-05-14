@@ -1,0 +1,1 @@
+{"format_version":"1.19.62","minecraft:recipe_shaped":{"description":{"identifier":"pokeb:neo_plasma_helm"},"tags":["crafting_table"],"pattern":["CCC","S S"],"key":{"C":{"tag":"forge:gems/crystal"},"S":{"tag":"forge:gems/silicon"}},"result":{"item":"pokeb:neo_plasma_helm","count":1}}}

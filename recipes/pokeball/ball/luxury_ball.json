@@ -1,0 +1,1 @@
+{"format_version":"1.19.62","minecraft:recipe_shapeless":{"description":{"identifier":"pokeb:poke_ball"},"tags":["crafting_table"],"ingredients":[{"type":"forge:nbt","item":"pokeb:poke_ball_lid","nbt":{"PokeBallID":"luxury_ball"}},{"item":"minecraft:stone_button"},{"item":"pokeb:platinum_base"}],"result":{"item":"pokeb:poke_ball","count":1,"nbt":{"PokeBallID":"luxury_ball"}}}}

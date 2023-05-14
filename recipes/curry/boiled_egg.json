@@ -1,0 +1,1 @@
+{"format_version":"1.19.62","minecraft:recipe_furnace":{"description":{"identifier":"pokeb:curry_boiled_egg"},"tags":["furnace"],"input":{"item":"minecraft:egg"},"output":{"item":"pokeb:curry_boiled_egg","count":1}}}

@@ -1,0 +1,1 @@
+{"format_version":"1.19.62","minecraft:recipe_shaped":{"description":{"identifier":"pokeb:whitebadgecase"},"tags":["crafting_table"],"pattern":["WWW","BBB","WWW"],"key":{"W":{"item":"pokeb:cooked_white_apricorn"},"B":{"item":"pokeb:cooked_black_apricorn"}},"result":{"item":"pokeb:whitebadgecase","count":1}}}

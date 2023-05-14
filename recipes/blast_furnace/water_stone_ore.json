@@ -1,0 +1,1 @@
+{"format_version":"1.19.62","minecraft:recipe_furnace":{"description":{"identifier":"pokeb:water_stone_shard"},"tags":["furnace","blast_furnace"],"input":{"item":"pokeb:water_stone_ore"},"output":"pokeb:water_stone_shard"}}

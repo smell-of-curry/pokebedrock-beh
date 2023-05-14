@@ -1,0 +1,9 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:weighted_random_feature": {
+        "description": {
+            "identifier": "pokeb:apricorn_sapling_feature"
+        },
+        "features": [["pokeb:black_apricorn_sapling_feature", 60]]
+    }
+}

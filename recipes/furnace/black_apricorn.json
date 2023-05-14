@@ -1,0 +1,9 @@
+{
+  "format_version": "1.19.62",
+  "minecraft:recipe_furnace": {
+    "description": { "identifier": "pokeb:cooked_black_apricorn" },
+    "tags": ["furnace"],
+    "input": { "item": "pokeb:black_apricorn" },
+    "output": "pokeb:cooked_black_apricorn"
+  }
+}

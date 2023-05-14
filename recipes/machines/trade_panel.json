@@ -1,0 +1,13 @@
+{
+  "format_version": "1.19.62",
+  "minecraft:recipe_shaped": {
+    "description": { "identifier": "pokeb:trade_panel" },
+    "tags": ["crafting_table"],
+    "pattern": ["AAA", "RRR", "ARA"],
+    "key": {
+      "A": { "item": "pokeb:aluminum_ingot" },
+      "R": { "item": "minecraft:redstone" }
+    },
+    "result": { "item": "pokeb:trade_panel", "count": 1 }
+  }
+}
