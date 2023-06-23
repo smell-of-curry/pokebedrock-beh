@@ -1,44 +1,64 @@
 {
-  "format_version": "1.13.0",
-  "minecraft:feature_rules": {
-    "description": {
-      "identifier": "pokeb:moon_stone_ore_feature_rule",
-      "places_feature": "pokeb:moon_stone_ore_feature"
-    },
-    "conditions": {
-      "placement_pass": "underground_pass",
-      "minecraft:biome_filter": [
-        {
-          "any_of": [
-            {
-              "test": "has_biome_tag",
-              "operator": "==",
-              "value": "overworld"
-            },
-            {
-              "test": "has_biome_tag",
-              "operator": "==",
-              "value": "overworld_generation"
-            }
-          ]
-        }
-      ]
-    },
-    "distribution": {
-      "iterations": 2,
-      "coordinate_eval_order": "zyx",
-      "x": {
-        "distribution": "uniform",
-        "extent": [0, 16]
-      },
-      "y": {
-        "distribution": "uniform",
-        "extent": [0, 100]
-      },
-      "z": {
-        "distribution": "uniform",
-        "extent": [0, 16]
-      }
-    }
-  }
+	"format_version": "1.17.0",
+	"minecraft:feature_rules": {
+		"description": {
+			"identifier": "pokeb:moon_stone_ore_feature_rule",
+			"places_feature": "pokeb:moon_stone_ore_feature"
+		},
+		"conditions": {
+			"placement_pass": "underground_pass",
+			"minecraft:biome_filter": [
+				{
+					"any_of": [
+						{
+							"test": "has_biome_tag",
+							"operator": "==",
+							"value": "ice_mountains"
+						},
+						{
+							"test": "has_biome_tag",
+							"operator": "==",
+							"value": "extreme_hills"
+						},
+						{
+							"test": "has_biome_tag",
+							"operator": "==",
+							"value": "extreme_hills_plus_trees"
+						},
+						{
+							"test": "has_biome_tag",
+							"operator": "==",
+							"value": "extreme_hills_mutated"
+						},
+						{
+							"test": "has_biome_tag",
+							"operator": "==",
+							"value": "extreme_hills_plus_trees_mutated"
+						},
+						{
+							"test": "has_biome_tag",
+							"operator": "==",
+							"value": "extreme_hills_edge"
+						}
+					]
+				}
+			]
+		},
+		"distribution": {
+			"iterations": 10,
+			"coordinate_eval_order": "zyx",
+			"x": {
+			  "distribution": "uniform",
+			  "extent": [0, 16]
+			},
+			"y": {
+			  "distribution": "uniform",
+			  "extent": [0, 62]
+			},
+			"z": {
+			  "distribution": "uniform",
+			  "extent": [0, 16]
+			}
+		  }
+	}
 }

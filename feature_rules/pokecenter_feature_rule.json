@@ -1,0 +1,40 @@
+{
+    "format_version": "1.17.0",
+    "minecraft:feature_rules": {
+      "description": {
+        "identifier": "pokeb:pokecenter_feature_rule",
+        "places_feature": "pokeb:pokecenter_feature"
+      },
+      "conditions": {
+        "placement_pass": "first_pass",
+        "minecraft:biome_filter": {
+          "any_of": [
+            {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "overworld"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "overworld_generation"
+              }
+          ]
+        }
+      },
+      "distribution": {
+        "iterations": 1,
+        "x": {
+          "distribution": "uniform",
+          "extent": [0, 16]
+        },
+        "y": "query.heightmap(variable.worldx, variable.worldz)",
+        "z": {
+          "distribution": "uniform",
+          "extent": [0, 16]
+        },
+        "scatter_chance": 50
+      }
+    }
+  }
+  

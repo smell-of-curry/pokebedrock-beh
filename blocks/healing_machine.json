@@ -21,9 +21,21 @@
         "origin": [-8, 0, -8],
         "size": [16, 16, 16]
       },
-      "minecraft:geometry": "geometry.healing_machine_0",
+      "minecraft:geometry": "geometry.healing_machine",
       "minecraft:block_light_absorption": 0,
-      "minecraft:destroy_time": 3
+      "minecraft:destroy_time": 3,
+      "minecraft:on_interact": {
+        "event": "on_interact",
+        "target": "self"
+      }
+    },
+    "events": {
+      "on_interact": {
+        "run_command": {
+          "command": ["scriptevent pokeb:interact_with_healing_machine"],
+          "target": "other"
+        }
+      }
     }
   }
 }

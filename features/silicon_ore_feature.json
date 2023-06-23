@@ -1,23 +1,15 @@
 {
-  "format_version": "1.13.0",
-  "minecraft:ore_feature": {
-    "description": {
-      "identifier": "pokeb:silicon_ore_feature"
-    },
-    "count": 2,
-    "replace_rules": [
-      {
-        "places_block": {
-          "name": "pokeb:silicon_ore",
-          "states": {}
-        },
-        "may_replace": [
-          {
-            "name": "minecraft:stone",
-            "states": {}
-          }
-        ]
-      }
-    ]
+	"format_version": "1.13.0",
+	"minecraft:ore_feature": {
+	  "description": {
+		"identifier": "pokeb:silicon_ore_feature"
+	  },
+	  "count": 6,
+		  "replace_rules": [
+			  {
+				  "places_block": "pokeb:silicon_ore",
+				  "may_replace": ["minecraft:stone"]
+			  }
+		  ]
+	}
   }
-}

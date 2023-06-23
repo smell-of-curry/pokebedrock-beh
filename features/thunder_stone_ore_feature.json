@@ -1,23 +1,15 @@
 {
-  "format_version": "1.13.0",
-  "minecraft:ore_feature": {
-    "description": {
-      "identifier": "ss:thunder_stone_ore_feature"
-    },
-    "count": 4,
-    "replace_rules": [
-      {
-        "places_block": {
-          "name": "pokeb:thunder_stone_ore",
-          "states": {}
-        },
-        "may_replace": [
-          {
-            "name": "minecraft:stone",
-            "states": {}
-          }
-        ]
-      }
-    ]
+	"format_version": "1.13.0",
+	"minecraft:ore_feature": {
+	  "description": {
+		"identifier": "pokeb:thunder_stone_ore_feature"
+	  },
+	  "count": 6,
+		  "replace_rules": [
+			  {
+				  "places_block": "pokeb:thunder_stone_ore",
+				  "may_replace": ["minecraft:stone"]
+			  }
+		  ]
+	}
   }
-}

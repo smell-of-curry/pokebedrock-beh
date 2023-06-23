@@ -4,20 +4,12 @@
     "description": {
       "identifier": "pokeb:leaf_stone_ore_feature"
     },
-    "count": 2,
-    "replace_rules": [
-      {
-        "places_block": {
-          "name": "pokeb:leaf_stone_ore",
-          "states": {}
-        },
-        "may_replace": [
-          {
-            "name": "minecraft:stone",
-            "states": {}
-          }
-        ]
-      }
-    ]
+    "count": 6,
+		"replace_rules": [
+			{
+				"places_block": "pokeb:leaf_stone_ore",
+				"may_replace": ["minecraft:stone"]
+			}
+		]
   }
 }

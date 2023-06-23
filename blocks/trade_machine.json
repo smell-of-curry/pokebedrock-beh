@@ -13,6 +13,12 @@
         "set_block_property": {
           "wiki:rotation": "(query.cardinal_facing_2d)"
         }
+      },
+      "on_interact": {
+        "run_command": {
+          "command": ["scriptevent pokeb:interact_with_trade_machine"],
+          "target": "other"
+        }
       }
     },
     "components": {
@@ -36,6 +42,10 @@
       "minecraft:destroy_time": 3,
       "minecraft:on_player_placing": {
         "event": "wiki:set_rotation"
+      },
+      "minecraft:on_interact": {
+        "event": "on_interact",
+        "target": "self"
       }
     },
     "permutations": [

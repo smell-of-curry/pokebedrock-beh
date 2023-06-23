@@ -1,29 +1,29 @@
 {
-  "format_version": "1.13.0",
+  "format_version": "1.17.0",
   "minecraft:feature_rules": {
     "description": {
       "identifier": "pokeb:water_stone_ore_feature_rule",
       "places_feature": "pokeb:water_stone_ore_feature"
     },
     "conditions": {
-      "placement_pass": "surface_pass",
       "minecraft:biome_filter": {
         "any_of": [
           {
             "test": "has_biome_tag",
             "operator": "==",
-            "value": "overworld"
+            "value": "ocean"
           },
           {
             "test": "has_biome_tag",
             "operator": "==",
-            "value": "overworld_generation"
+            "value": "river"
           }
         ]
-      }
+      },
+      "placement_pass": "surface_pass"
     },
     "distribution": {
-      "iterations": 2,
+      "iterations": 10,
       "coordinate_eval_order": "zyx",
       "x": {
         "distribution": "uniform",
@@ -31,7 +31,7 @@
       },
       "y": {
         "distribution": "uniform",
-        "extent": [0, 100]
+        "extent": [0, 62]
       },
       "z": {
         "distribution": "uniform",

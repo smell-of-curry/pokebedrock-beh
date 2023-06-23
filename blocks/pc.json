@@ -18,6 +18,10 @@
       "pokeb:set_in_use": {
         "set_block_property": {
           "pokeb:is_in_use": true
+        },
+        "run_command": {
+          "command": ["scriptevent pokeb:interact_with_pc"],
+          "target": "other"
         }
       },
       "pokeb:set_not_use": {

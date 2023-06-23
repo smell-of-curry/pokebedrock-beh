@@ -1,1 +1,9 @@
-{"format_version":"1.19.62","minecraft:recipe_furnace":{"description":{"identifier":"pokeb:silicon"},"tags":["furnace"],"input":{"tag":"forge:ores/silicon"},"output":"pokeb:silicon"}}
+{
+  "format_version": "1.19.62",
+  "minecraft:recipe_furnace": {
+    "description": { "identifier": "pokeb:silicon_ore" },
+    "tags": ["furnace"],
+    "input": { "item": "pokeb:silicon_ore" },
+    "output": "pokeb:silicon"
+  }
+}

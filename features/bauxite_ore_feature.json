@@ -2,22 +2,14 @@
   "format_version": "1.13.0",
   "minecraft:ore_feature": {
     "description": {
-      "identifier": "ss:bauxite_ore_feature"
+      "identifier": "pokeb:bauxite_ore_feature"
     },
-    "count": 4,
-    "replace_rules": [
-      {
-        "places_block": {
-          "name": "pokeb:bauxite_ore",
-          "states": {}
-        },
-        "may_replace": [
-          {
-            "name": "minecraft:stone",
-            "states": {}
-          }
-        ]
-      }
-    ]
+    "count": 6,
+		"replace_rules": [
+			{
+				"places_block": "pokeb:bauxite_ore",
+				"may_replace": ["minecraft:stone"]
+			}
+		]
   }
 }
