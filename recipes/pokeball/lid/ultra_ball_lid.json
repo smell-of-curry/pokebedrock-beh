@@ -1,7 +1,7 @@
 {
   "format_version": "1.19.62",
   "minecraft:recipe_shaped": {
-    "description": { "identifier": "ball:ultraball_lid" },
+    "description": { "identifier": "pokeb:ultraball_lid" },
     "tags": ["crafting_table"],
     "pattern": ["ABA"],
     "key": {
@@ -9,7 +9,7 @@
       "B": { "item": "pokeb:cooked_yellow_apricorn" }
     },
     "result": {
-      "item": "ball:ultraball_lid",
+      "item": "pokeb:ultraball_lid",
       "count": 1
     }
   }

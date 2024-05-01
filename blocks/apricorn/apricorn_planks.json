@@ -1,0 +1,28 @@
+
+
+{
+	"format_version": "1.20.40",
+	"minecraft:block": {
+		"description": {
+			"identifier": "pokeb:apricorn_planks",
+			"menu_category": {
+				"category": "construction",
+				"group": "itemGroup.name.planks"
+			}
+		},
+		"components": {
+			"minecraft:flammable": {
+				"burn_odds": 5,
+				"flame_odds": 5
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 0.5
+			},
+			"minecraft:loot": "loot_tables/blocks/apricorn/apricorn_planks.json",	
+			"minecraft:destructible_by_explosion": true,
+			"minecraft:breathability": "solid",
+			"minecraft:unit_cube": {},
+			"tag:wood": {}
+		}
+	}
+}

@@ -5,7 +5,7 @@
     "tags": ["crafting_table"],
     "pattern": ["MM ", "MS ", " S "],
     "key": {
-      "M": { "item": "pokeb:fire-stone" },
+      "M": { "item": "pokeb:fire_stone" },
       "S": { "item": "pokeb:aluminum_ingot" }
     },
     "result": { "item": "pokeb:fire_stone_axe", "count": 1 }

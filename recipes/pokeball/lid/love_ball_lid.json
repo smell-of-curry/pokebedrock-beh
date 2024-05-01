@@ -1,1 +1,13 @@
-{"format_version":"1.19.62","minecraft:recipe_shaped":{"description":{"identifier":"pokeb:poke_ball_lid"},"tags":["crafting_table"],"pattern":["###"],"key":{"#":{"item":"pokeb:cooked_pink_apricorn"}},"result":{"item":"pokeb:poke_ball_lid","count":3,"nbt":{"PokeBallID":"love_ball"}}}}
+{
+  "format_version": "1.19.62",
+  "minecraft:recipe_shaped": {
+    "description": { "identifier": "pokeb:loveball_lid" },
+    "tags": ["crafting_table"],
+    "pattern": ["###"],
+    "key": { "#": { "item": "pokeb:cooked_pink_apricorn" } },
+    "result": {
+      "item": "pokeb:loveball_lid",
+      "count": 3
+    }
+  }
+}

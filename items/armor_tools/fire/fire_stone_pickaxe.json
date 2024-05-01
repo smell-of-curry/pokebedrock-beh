@@ -7,7 +7,7 @@
     },
     "components": {
       "minecraft:icon": {
-        "texture": "ss_firepickaxe"
+        "texture": "fire_stone_pickaxe"
       },
       "minecraft:creative_category": {
         "parent": "itemGroup.name.pickaxe"

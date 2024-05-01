@@ -1,0 +1,22 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:item": {
+      "description": {
+        "identifier": "pokeb:wiki_berry",
+        "category": "nature"
+      },
+      "components": {
+        "minecraft:max_stack_size": 64,
+        "minecraft:icon": {
+          "texture": "wiki_berry"
+        },
+        "minecraft:block_placer": {
+          "block": "pokeb:wiki_berry_plant"
+        },
+        "minecraft:creative_category": {
+          "parent": "itemGroup.name.crop"
+        }
+      }
+    }
+  }
+  

@@ -1,15 +1,15 @@
 {
     "format_version": "1.19.62",
     "minecraft:recipe_shapeless": {
-      "description": { "identifier": "ball:pokeball" },
+      "description": { "identifier": "pokeb:pokeball" },
       "tags": ["crafting_table"],
       "ingredients": [
-        { "item": "ball:pokeball_lid" },
+        { "item": "pokeb:pokeball_lid" },
         { "item": "minecraft:stone_button" },
         { "item": "pokeb:iron_base" }
       ],
       "result": {
-        "item": "ball:pokeball",
+        "item": "pokeb:pokeball",
         "count": 1
       }
     }

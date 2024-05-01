@@ -4,7 +4,7 @@
     "description": { "identifier": "pokeb:dusk_stone_boots" },
     "tags": ["crafting_table"],
     "pattern": ["M M", "M M"],
-    "key": { "M": { "item": "pokeb:dusk-stone" } },
+    "key": { "M": { "item": "pokeb:dusk_stone" } },
     "result": { "item": "pokeb:dusk_stone_boots", "count": 1 }
   }
 }

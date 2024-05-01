@@ -1,1 +1,0 @@
-{"format_version":"1.19.62","minecraft:recipe_furnace":{"description":{"identifier":"pokeb:shiny_stone_shard"},"tags":["furnace","blast_furnace"],"input":{"item":"pokeb:shiny_stone_ore"},"output":"pokeb:shiny_stone_shard"}}

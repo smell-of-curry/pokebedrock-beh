@@ -4,20 +4,14 @@
     "description": {
       "identifier": "pokeb:trade_machine",
       "category": "Nature",
-      "properties": {
+      "states": {
         "wiki:rotation": [2, 3, 4, 5]
       }
     },
     "events": {
       "wiki:set_rotation": {
-        "set_block_property": {
+        "set_block_state": {
           "wiki:rotation": "(query.cardinal_facing_2d)"
-        }
-      },
-      "on_interact": {
-        "run_command": {
-          "command": ["scriptevent pokeb:interact_with_trade_machine"],
-          "target": "other"
         }
       }
     },
@@ -38,37 +32,35 @@
         "size": [16, 16, 16]
       },
       "minecraft:geometry": "geometry.trade_machine",
-      "minecraft:block_light_absorption": 0,
-      "minecraft:destroy_time": 3,
+      "minecraft:light_dampening": 0,
+        "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 3
+      },
       "minecraft:on_player_placing": {
         "event": "wiki:set_rotation"
-      },
-      "minecraft:on_interact": {
-        "event": "on_interact",
-        "target": "self"
       }
     },
     "permutations": [
       {
-        "condition": "query.block_property('wiki:rotation') == 2",
+        "condition": "query.block_state('wiki:rotation') == 2",
         "components": {
           "minecraft:rotation": [0, 180, 0]
         }
       },
       {
-        "condition": "query.block_property('wiki:rotation') == 3",
+        "condition": "query.block_state('wiki:rotation') == 3",
         "components": {
           "minecraft:rotation": [0, 0, 0]
         }
       },
       {
-        "condition": "query.block_property('wiki:rotation') == 4",
+        "condition": "query.block_state('wiki:rotation') == 4",
         "components": {
           "minecraft:rotation": [0, 270, 0]
         }
       },
       {
-        "condition": "query.block_property('wiki:rotation') == 5",
+        "condition": "query.block_state('wiki:rotation') == 5",
         "components": {
           "minecraft:rotation": [0, 90, 0]
         }

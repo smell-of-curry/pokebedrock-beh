@@ -42,6 +42,10 @@
         "container_type": "inventory",
         "inventory_size": 128,
         "private": true
+      },
+      "minecraft:nameable": {
+        "allow_name_tag_renaming": false,
+        "always_show": false
       }
     },
     "events": {

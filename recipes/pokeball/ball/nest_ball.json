@@ -1,1 +1,17 @@
-{"format_version":"1.19.62","minecraft:recipe_shapeless":{"description":{"identifier":"pokeb:poke_ball"},"tags":["crafting_table"],"ingredients":[{"type":"forge:nbt","item":"pokeb:poke_ball_lid","nbt":{"PokeBallID":"nest_ball"}},{"item":"minecraft:stone_button"},{"tag":"pokeb:pokeball_bases"}],"result":{"item":"pokeb:poke_ball","count":1,"nbt":{"PokeBallID":"nest_ball"}}}}
+{
+    "format_version": "1.19.62",
+    "minecraft:recipe_shapeless": {
+      "description": { "identifier": "pokeb:nestball" },
+      "tags": ["crafting_table"],
+      "ingredients": [
+        { "item": "pokeb:nestball_lid" },
+        { "item": "minecraft:stone_button" },
+        { "item": "pokeb:iron_base" }
+      ],
+      "result": {
+        "item": "pokeb:nestball",
+        "count": 1
+      }
+    }
+  }
+  

@@ -1,10 +1,10 @@
 {
   "format_version": "1.19.62",
   "minecraft:recipe_shaped": {
-    "description": { "identifier": "pokeb:sun-stone" },
+    "description": { "identifier": "pokeb:sun_stone" },
     "tags": ["crafting_table"],
     "pattern": ["SSS", "SSS", "SSS"],
     "key": { "S": { "item": "pokeb:sun_stone_shard" } },
-    "result": { "item": "pokeb:sun-stone", "count": 1 }
+    "result": { "item": "pokeb:sun_stone", "count": 1 }
   }
 }

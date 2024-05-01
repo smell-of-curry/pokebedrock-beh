@@ -2,7 +2,7 @@
   "format_version": "1.16.100",
   "minecraft:item": {
     "description": {
-      "identifier": "pokeb:dawn_sone_shard",
+      "identifier": "pokeb:dawn_stone_shard",
       "category": "Nature"
     },
     "components": {

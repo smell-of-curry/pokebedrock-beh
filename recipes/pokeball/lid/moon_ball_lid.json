@@ -1,1 +1,17 @@
-{"format_version":"1.19.62","minecraft:recipe_shaped":{"description":{"identifier":"pokeb:poke_ball_lid"},"tags":["crafting_table"],"pattern":["ABC"],"key":{"A":{"item":"pokeb:cooked_blue_apricorn"},"B":{"item":"pokeb:cooked_yellow_apricorn"},"C":{"item":"pokeb:cooked_black_apricorn"}},"result":{"item":"pokeb:poke_ball_lid","count":3,"nbt":{"PokeBallID":"moon_ball"}}}}
+{
+  "format_version": "1.19.62",
+  "minecraft:recipe_shaped": {
+    "description": { "identifier": "pokeb:moonball_lid" },
+    "tags": ["crafting_table"],
+    "pattern": ["ABC"],
+    "key": {
+      "A": { "item": "pokeb:cooked_blue_apricorn" },
+      "B": { "item": "pokeb:cooked_yellow_apricorn" },
+      "C": { "item": "pokeb:cooked_black_apricorn" }
+    },
+    "result": {
+      "item": "pokeb:moonball_lid",
+      "count": 3
+    }
+  }
+}

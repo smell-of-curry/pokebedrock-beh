@@ -7,7 +7,7 @@
     },
     "components": {
       "minecraft:icon": {
-        "texture": "ss_fireshovel"
+        "texture": "fire_stone_shovel"
       },
       "minecraft:creative_category": {
         "parent": "itemGroup.name.sword"

@@ -2,7 +2,7 @@
   "format_version": "1.16.100",
   "minecraft:item": {
     "description": {
-      "identifier": "pokeb:thunder-stone",
+      "identifier": "pokeb:thunder_stone",
       "category": "Nature"
     },
     "components": {

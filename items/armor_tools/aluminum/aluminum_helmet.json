@@ -7,7 +7,7 @@
     },
     "components": {
       "minecraft:icon": {
-        "texture": "ss_aluminumhelm"
+        "texture": "alumnium_helmet"
       },
       "minecraft:creative_category": {
         "parent": "itemGroup.name.helmet"

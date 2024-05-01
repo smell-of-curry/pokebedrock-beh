@@ -1,1 +1,0 @@
-{"format_version":"1.19.62","minecraft:recipe_shaped":{"description":{"identifier":"pokeb:platinum_chestplate"},"tags":["crafting_table"],"pattern":["M M","MMM","MMM"],"key":{"M":{"tag":"forge:ingots/platinum"}},"result":{"item":"pokeb:platinum_chestplate","count":1}}}

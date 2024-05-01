@@ -1,1 +1,0 @@
-{"format_version":"1.19.62","minecraft:recipe_shaped":{"description":{"identifier":"pokeb:repel"},"tags":["crafting_table"],"pattern":["APN","APA","APA"],"key":{"A":{"item":"pokeb:aluminum_ingot"},"P":{"item": "minecraft:redstone"},"N":{"item":"minecraft:iron_nugget"}},"result":{"item":"pokeb:repel","count":1}}}

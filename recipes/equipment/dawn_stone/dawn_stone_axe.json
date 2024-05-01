@@ -5,7 +5,7 @@
     "tags": ["crafting_table"],
     "pattern": ["MM ", "MS ", " S "],
     "key": {
-      "M": { "item": "pokeb:dawn-stone" },
+      "M": { "item": "pokeb:dawn_stone" },
       "S": { "item": "pokeb:aluminum_ingot" }
     },
     "result": { "item": "pokeb:dawn_stone_axe", "count": 1 }

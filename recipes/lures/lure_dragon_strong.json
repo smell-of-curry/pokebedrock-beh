@@ -1,1 +1,0 @@
-{"format_version":"1.19.62","minecraft:recipe_shapeless":{"description":{"identifier":"pokeb:lure_dragon_strong"},"tags":["crafting_table"],"ingredients":[{"item":"pokeb:lure_casing_strong"},{"item":"pokeb:haban_berry"},{"item":"pokeb:sitrus_berry"},{"item":"pokeb:lum_berry"},{"item":"pokeb:enigma_berry"}],"result":{"item":"pokeb:lure_dragon_strong","count":1}}}

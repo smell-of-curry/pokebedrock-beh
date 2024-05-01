@@ -1,1 +1,0 @@
-{"format_version":"1.19.62","minecraft:recipe_shaped":{"description":{"identifier":"pokeb:white_flute"},"tags":["crafting_table"],"pattern":["SSS","RPP","SSS"],"key":{"S":{"item":"pokeb:white_shard"},"P":{"item":"minecraft:glass_pane"},"R":{"item":"minecraft:sugar_cane"}},"result":{"item":"pokeb:white_flute","count":1}}}

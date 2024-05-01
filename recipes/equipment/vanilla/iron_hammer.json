@@ -1,1 +1,0 @@
-{"format_version":"1.19.62","minecraft:recipe_shaped":{"description":{"identifier":"pokeb:iron_hammer"},"tags":["crafting_table"],"pattern":["MMM","MSM"," S "],"key":{"M":{"item": "minecraft:iron_ingot"},"S":{"item":"pokeb:aluminum_ingot"}},"result":{"item":"pokeb:iron_hammer","count":1}}}

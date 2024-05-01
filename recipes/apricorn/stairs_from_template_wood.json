@@ -1,0 +1,19 @@
+{
+  "format_version": "1.19.62",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "pokeb:stairs_from_apricorn_wood"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["W  ", "WW ", "WWW"],
+    "key": {
+      "W": {
+        "item": "pokeb:apricorn_planks"
+      }
+    },
+    "result": {
+      "item": "pokeb:apricorn_stairs",
+      "count": 4
+    }
+  }
+}

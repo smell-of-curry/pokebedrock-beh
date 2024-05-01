@@ -1,1 +1,0 @@
-{"format_version":"1.19.62","minecraft:recipe_shaped":{"description":{"identifier":"pokeb:ruby_sword"},"tags":["crafting_table"],"pattern":["M","M","S"],"key":{"M":{"tag":"forge:gems/ruby"},"S":{"item":"pokeb:aluminum_ingot"}},"result":{"item":"pokeb:ruby_sword","count":1}}}

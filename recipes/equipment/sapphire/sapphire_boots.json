@@ -1,1 +1,0 @@
-{"format_version":"1.19.62","minecraft:recipe_shaped":{"description":{"identifier":"pokeb:sapphire_boots"},"tags":["crafting_table"],"pattern":["M M","M M"],"key":{"M":{"tag":"forge:gems/sapphire"}},"result":{"item":"pokeb:sapphire_boots","count":1}}}

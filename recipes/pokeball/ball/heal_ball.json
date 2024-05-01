@@ -1,21 +1,16 @@
 {
   "format_version": "1.19.62",
   "minecraft:recipe_shapeless": {
-    "description": { "identifier": "pokeb:poke_ball" },
+    "description": { "identifier": "pokeb:healball" },
     "tags": ["crafting_table"],
     "ingredients": [
-      {
-        "type": "forge:nbt",
-        "item": "pokeb:poke_ball_lid",
-        "nbt": { "PokeBallID": "heal_ball" }
-      },
+      { "item": "pokeb:healball_lid" },
       { "item": "minecraft:stone_button" },
-      { "tag": "pokeb:pokeball_bases" }
+      { "item": "pokeb:iron_base" }
     ],
     "result": {
-      "item": "pokeb:poke_ball",
-      "count": 1,
-      "nbt": { "PokeBallID": "heal_ball" }
+      "item": "pokeb:healball",
+      "count": 1
     }
   }
 }

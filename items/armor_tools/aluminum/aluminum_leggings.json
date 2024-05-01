@@ -7,7 +7,7 @@
     },
     "components": {
       "minecraft:icon": {
-        "texture": "ss_aluminumleggings"
+        "texture": "alumnium_leggings"
       },
       "minecraft:creative_category": {
         "parent": "itemGroup.name.leggings"

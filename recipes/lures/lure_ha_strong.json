@@ -1,1 +1,0 @@
-{"format_version":"1.19.62","minecraft:recipe_shapeless":{"description":{"identifier":"pokeb:lure_ha_strong"},"tags":["crafting_table"],"ingredients":[{"item":"pokeb:lure_casing_strong"},{"item":"pokeb:starf_berry"},{"item":"pokeb:petaya_berry"},{"item":"pokeb:lum_berry"},{"item":"pokeb:apicot_berry"}],"result":{"item":"pokeb:lure_ha_strong","count":1}}}

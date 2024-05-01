@@ -1,1 +1,0 @@
-{"format_version":"1.19.62","minecraft:recipe_shaped":{"description":{"identifier":"pokeb:plasma_helm"},"tags":["crafting_table"],"pattern":["MMM","M M"],"key":{"M":{"tag":"forge:gems/crystal"}},"result":{"item":"pokeb:plasma_helm","count":1}}}

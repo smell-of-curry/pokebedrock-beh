@@ -1,0 +1,18 @@
+{
+  "format_version": "1.19.62",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "pokeb:crafting_table_from_apricorn_wood"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["WW", "WW"],
+    "key": {
+      "W": {
+        "item": "pokeb:apricorn_planks"
+      }
+    },
+    "result": {
+      "item": "minecraft:crafting_table"
+    }
+  }
+}

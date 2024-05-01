@@ -2,7 +2,7 @@
   "format_version": "1.16.100",
   "minecraft:item": {
     "description": {
-      "identifier": "pokeb:moon-stone",
+      "identifier": "pokeb:moon_stone",
       "category": "Nature"
     },
     "components": {

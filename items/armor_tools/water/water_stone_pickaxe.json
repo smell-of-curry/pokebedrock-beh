@@ -7,7 +7,7 @@
     },
     "components": {
       "minecraft:icon": {
-        "texture": "ss_waterpickaxe"
+        "texture": "water_stone_pickaxe"
       },
       "minecraft:creative_category": {
         "parent": "itemGroup.name.pickaxe"

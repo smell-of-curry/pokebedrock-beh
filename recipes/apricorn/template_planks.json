@@ -1,0 +1,21 @@
+
+{
+	"format_version": "1.19.62",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "pokeb:apricorn_planks_craft"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"ingredients": [
+			{
+				"item": "pokeb:apricorn_log"
+			}
+		],
+		"result": {
+			"item": "pokeb:apricorn_planks",
+			"count": 4
+		}
+	}
+}

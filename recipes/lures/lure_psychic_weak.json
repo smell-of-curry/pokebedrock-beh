@@ -1,1 +1,0 @@
-{"format_version":"1.19.62","minecraft:recipe_shapeless":{"description":{"identifier":"pokeb:lure_psychic_weak"},"tags":["crafting_table"],"ingredients":[{"item":"pokeb:lure_casing_weak"},{"item":"pokeb:payapa_berry"},{"item":"pokeb:oran_berry"},{"item":"pokeb:leppa_berry"}],"result":{"item":"pokeb:lure_psychic_weak","count":1}}}

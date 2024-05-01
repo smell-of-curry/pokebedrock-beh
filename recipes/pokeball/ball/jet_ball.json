@@ -1,1 +1,0 @@
-{"format_version":"1.19.62","minecraft:recipe_shapeless":{"description":{"identifier":"pokeb:poke_ball"},"tags":["crafting_table"],"ingredients":[{"type":"forge:nbt","item":"pokeb:poke_ball_lid","nbt":{"PokeBallID":"jet_ball"}},{"item":"minecraft:stone_button"},{"item":"pokeb:wooden_base"}],"result":{"item":"pokeb:poke_ball","count":1,"nbt":{"PokeBallID":"jet_ball"}}}}

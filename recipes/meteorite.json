@@ -1,1 +1,0 @@
-{"format_version":"1.19.62","minecraft:recipe_shaped":{"description":{"identifier":"pokeb:meteorite"},"tags":["crafting_table"],"pattern":["  E"," MS","ESE"],"key":{"E":{"item":"minecraft:end_stone"},"M":{"item":"pokeb:moon-stone"},"S":{"item":"pokeb:moon_stone_shard"}},"result":{"item":"pokeb:meteorite","count":1}}}

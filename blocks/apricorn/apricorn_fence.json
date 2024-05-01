@@ -1,0 +1,140 @@
+{
+	"format_version": "1.20.30",
+	"minecraft:block": {
+		"description": {
+			"identifier": "pokeb:apricorn_fence",
+			"menu_category": {
+				"category": "none",
+				"group": "none"
+			},
+			"states": {
+				"pokeb:north": [
+					0, 1
+				],
+				"pokeb:south": [
+					0, 1
+				],
+				"pokeb:east": [
+					0, 1
+				],
+				"pokeb:west": [
+					0, 1
+				], 
+				"pokeb:is_placed": [
+					0, 1
+				]
+			}
+		},
+		"components": {
+			"minecraft:flammable": {
+				"destroy_chance_modifier": 45,
+				"catch_chance_modifier": 80
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 0.5
+			},
+			"minecraft:collision_box": {
+				"origin": [-6, 0, -6],
+				"size": [12, 16, 12]
+			},
+			"minecraft:selection_box": {
+				"origin": [-2, 0, -2],
+				"size": [4, 12, 4]
+			},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "apricorn_planks",
+					"render_method": "opaque"
+				}
+			},
+			"minecraft:queued_ticking": {
+				"looping": true,
+				"interval_range": [
+					0,
+					0
+				],
+				"on_tick": {
+					"event": "pokeb:refresh_sides"
+				}
+			},
+			"minecraft:geometry": {
+				"identifier": "geometry.fence",
+				"bone_visibility": {
+					"preview": "query.block_state('pokeb:is_placed') == 0",
+					"fence": "query.block_state('pokeb:is_placed') == 1",
+					"north": "query.block_state('pokeb:north') == 1",
+					"south": "query.block_state('pokeb:south') == 1",
+					"east": "query.block_state('pokeb:east') == 1",
+					"west": "query.block_state('pokeb:west') == 1"
+				}
+			},
+			"minecraft:transformation": { "translation": [0.0, 0.255, 0.0] },
+			"minecraft:on_placed": {
+				"event": "pokeb:placed"
+			},
+			"minecraft:loot": "loot_tables/plants/trees/apricorn/apricorn_fence.json",
+			"minecraft:destructible_by_explosion": true,
+			"minecraft:breathability": "solid",
+			"tag:fence": {},
+			"tag:wood": {}
+		},
+		"events": {
+			"pokeb:placed": {
+				"set_block_state": {
+					"pokeb:is_placed": 1
+				}
+			},
+			"pokeb:refresh_sides": {
+				"sequence": [{
+						"condition": "!query.block_neighbor_has_any_tag(0,0,-1, 'no_fence_join') && query.block_neighbor_has_any_tag(0,0,-1,'custom_fence','metal','wood','stone','wood_pick_diggable','stone_pick_diggable','iron_pick_diggable','diamond_pick_diggable','netherite_pick_diggable','dirt','sand','gravel','grass','snow')",
+						"set_block_state": {
+							"pokeb:north": 1
+						}
+					},
+					{
+						"condition": "!query.block_neighbor_has_any_tag(0,0,-1,'custom_fence','metal','wood','stone','wood_pick_diggable','stone_pick_diggable','iron_pick_diggable','diamond_pick_diggable','netherite_pick_diggable','dirt','sand','gravel','grass','snow')",
+						"set_block_state": {
+							"pokeb:north": 0
+						}
+					},
+					{
+						"condition": "!query.block_neighbor_has_any_tag(0,0,1, 'no_fence_join') && query.block_neighbor_has_any_tag(0,0,1,'custom_fence','metal','wood','stone','wood_pick_diggable','stone_pick_diggable','iron_pick_diggable','diamond_pick_diggable','netherite_pick_diggable','dirt','sand','gravel','grass','snow')",
+						"set_block_state": {
+							"pokeb:south": 1
+						}
+					},
+					{
+						"condition": "!query.block_neighbor_has_any_tag(0,0,1,'custom_fence','metal','wood','stone','wood_pick_diggable','stone_pick_diggable','iron_pick_diggable','diamond_pick_diggable','netherite_pick_diggable','dirt','sand','gravel','grass','snow')",
+						"set_block_state": {
+							"pokeb:south": 0
+						}
+					},
+					{
+						"condition": "!query.block_neighbor_has_any_tag(-1,0,0, 'no_fence_join') && query.block_neighbor_has_any_tag(-1,0,0,'custom_fence','metal','wood','stone','wood_pick_diggable','stone_pick_diggable','iron_pick_diggable','diamond_pick_diggable','netherite_pick_diggable','dirt','sand','gravel','grass','snow')",
+						"set_block_state": {
+							"pokeb:west": 1
+						}
+					},
+					{
+						"condition": "!query.block_neighbor_has_any_tag(-1,0,0,'custom_fence','metal','wood','stone','wood_pick_diggable','stone_pick_diggable','iron_pick_diggable','diamond_pick_diggable','netherite_pick_diggable','dirt','sand','gravel','grass','snow')",
+						"set_block_state": {
+							"pokeb:west": 0
+						}
+					},
+					{
+						"condition": "!query.block_neighbor_has_any_tag(1,0,0, 'no_fence_join') && query.block_neighbor_has_any_tag(1,0,0,'custom_fence','metal','wood','stone','wood_pick_diggable','stone_pick_diggable','iron_pick_diggable','diamond_pick_diggable','netherite_pick_diggable','dirt','sand','gravel','grass','snow')",
+						"set_block_state": {
+							"pokeb:east": 1
+						}
+					},
+					{
+						"condition": "!query.block_neighbor_has_any_tag(1,0,0,'custom_fence','metal','wood','stone','wood_pick_diggable','stone_pick_diggable','iron_pick_diggable','diamond_pick_diggable','netherite_pick_diggable','dirt','sand','gravel','grass','snow')",
+						"set_block_state": {
+							"pokeb:east": 0
+						}
+					}
+				]
+			}
+		}
+	}
+}

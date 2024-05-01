@@ -7,7 +7,7 @@
     },
     "components": {
       "minecraft:icon": {
-        "texture": "ss_sunaxe"
+        "texture": "sun_stone_axe"
       },
       "minecraft:creative_category": {
         "parent": "itemGroup.name.axe"

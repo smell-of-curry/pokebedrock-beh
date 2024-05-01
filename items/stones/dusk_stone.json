@@ -2,7 +2,7 @@
   "format_version": "1.16.100",
   "minecraft:item": {
     "description": {
-      "identifier": "pokeb:dusk-stone",
+      "identifier": "pokeb:dusk_stone",
       "category": "items"
     },
     "components": {

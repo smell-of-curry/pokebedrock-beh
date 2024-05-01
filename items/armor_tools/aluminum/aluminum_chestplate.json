@@ -7,7 +7,7 @@
     },
     "components": {
       "minecraft:icon": {
-        "texture": "ss_aluminumchestplate"
+        "texture": "aluminum_chestplate"
       },
       "minecraft:creative_category": {
         "parent": "itemGroup.name.chestplate"

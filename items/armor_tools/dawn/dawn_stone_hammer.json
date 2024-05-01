@@ -7,7 +7,7 @@
     },
     "components": {
       "minecraft:icon": {
-        "texture": "ss_dawnhammer"
+        "texture": "dawn_stone_hammer"
       },
       "minecraft:creative_category": {
         "parent": "itemGroup.name.pickaxe"

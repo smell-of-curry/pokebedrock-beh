@@ -1,1 +1,16 @@
-{"format_version":"1.19.62","minecraft:recipe_shaped":{"description":{"identifier":"pokeb:poke_ball_lid"},"tags":["crafting_table"],"pattern":["AAB"],"key":{"A":{"item":"pokeb:cooked_green_apricorn"},"B":{"item":"pokeb:cooked_yellow_apricorn"}},"result":{"item":"pokeb:poke_ball_lid","count":5,"nbt":{"PokeBallID":"safari_ball"}}}}
+{
+  "format_version": "1.19.62",
+  "minecraft:recipe_shaped": {
+    "description": { "identifier": "pokeb:safariball_lid" },
+    "tags": ["crafting_table"],
+    "pattern": ["AAB"],
+    "key": {
+      "A": { "item": "pokeb:cooked_green_apricorn" },
+      "B": { "item": "pokeb:cooked_yellow_apricorn" }
+    },
+    "result": {
+      "item": "pokeb:safariball_lid",
+      "count": 5
+    }
+  }
+}

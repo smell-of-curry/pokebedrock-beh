@@ -1,1 +1,0 @@
-{"format_version":"1.19.62","minecraft:recipe_shaped":{"description":{"identifier":"pokeb:acro_bike_frame"},"tags":["crafting_table"],"pattern":["  A","AS ","A A"],"key":{"A":{"item":"pokeb:aluminum_ingot"},"S":{"item":"pokeb:dawn-stone"}},"result":{"item":"pokeb:acro_bike_frame","count":1}}}

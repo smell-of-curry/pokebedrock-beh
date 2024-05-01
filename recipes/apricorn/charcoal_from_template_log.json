@@ -1,0 +1,12 @@
+{
+  "format_version": "1.19.62",
+  "minecraft:recipe_furnace": {
+    "description": {
+      "identifier": "minecraft:furnace_charcoal_from_apricorn_log"
+    },
+
+    "tags": ["furnace"],
+    "input": "pokeb:apricorn_log",
+    "output": "minecraft:charcoal"
+  }
+}

@@ -1,1 +1,0 @@
-{"format_version":"1.19.62","minecraft:recipe_shaped":{"description":{"identifier":"pokeb:zygarde_cube"},"tags":["crafting_table"],"pattern":["DED","ESE","DED"],"key":{"D":{"item":"pokeb:ultra_deep_stone"},"E":{"item":"minecraft:emerald"},"S":{"item":"pokeb:sun-stone"}},"result":{"item":"pokeb:zygarde_cube","count":1}}}

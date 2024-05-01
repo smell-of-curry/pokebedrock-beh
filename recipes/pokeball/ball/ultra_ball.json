@@ -1,15 +1,15 @@
 {
   "format_version": "1.19.62",
   "minecraft:recipe_shapeless": {
-    "description": { "identifier": "ball:ultraball" },
+    "description": { "identifier": "pokeb:ultraball" },
     "tags": ["crafting_table"],
     "ingredients": [
-      { "item": "ball:ultraball_lid" },
+      { "item": "pokeb:ultraball_lid" },
       { "item": "minecraft:stone_button" },
       { "item": "pokeb:iron_base" }
     ],
     "result": {
-      "item": "ball:ultraball",
+      "item": "pokeb:ultraball",
       "count": 1
     }
   }

@@ -1,1 +1,0 @@
-{"format_version":"1.19.62","minecraft:recipe_shaped":{"description":{"identifier":"pokeb:ruby_legs"},"tags":["crafting_table"],"pattern":["MMM","M M","M M"],"key":{"M":{"tag":"forge:gems/ruby"}},"result":{"item":"pokeb:ruby_legs","count":1}}}

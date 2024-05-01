@@ -7,7 +7,7 @@
     },
     "components": {
       "minecraft:icon": {
-        "texture": "ss_waterhammer"
+        "texture": "water_stone_hammer"
       },
       "minecraft:creative_category": {
         "parent": "itemGroup.name.sword"

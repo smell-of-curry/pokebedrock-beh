@@ -7,28 +7,11 @@
       "is_summonable": true,
       "is_experimental": false,
       "animations": {
-        "digging": "controller.animation.digging",
-        "eating": "controller.animation.eating",
-        "gliding": "controller.animation.gliding",
-        "ground": "controller.animation.ground",
-        "jumping": "controller.animation.jumping",
-        "levitating": "controller.animation.levitating",
-        "moving": "controller.animation.moving",
-        "riding": "controller.animation.riding",
-        "swimming": "controller.animation.swimming"
+        "fly_pokemon": "controller.animation.fly_pokemon",
+        "swim_pokemon": "controller.animation.swim_pokemon"
       },
       "scripts": {
-        "animate": [
-          "digging",
-          "eating",
-          "gliding",
-          "ground",
-          "jumping",
-          "levitating",
-          "moving",
-          "riding",
-          "swimming"
-        ]
+        "animate": ["fly_pokemon", "swim_pokemon"]
       }
     },
     "component_groups": {
@@ -505,42 +488,42 @@
       "engine:interact_with_crate": {},
       "engine:interact_with_server_npc": {},
       "pokeb:new_running_boots": {
-        "run_command": {
+        "queue_command": {
           "command": ["effect @s speed 1 3 true"]
         }
       },
       "pokeb:old_running_boots": {
-        "run_command": {
+        "queue_command": {
           "command": ["effect @s speed 1 0 true"]
         }
       },
       "pokeb:fire_stone_effect": {
-        "run_command": {
+        "queue_command": {
           "command": ["effect @s fire_resistance 1 1 true"]
         }
       },
       "pokeb:water_stone_effect": {
-        "run_command": {
+        "queue_command": {
           "command": ["effect @s water_breathing 1 1 true"]
         }
       },
       "pokeb:leaf_stone_effect": {
-        "run_command": {
+        "queue_command": {
           "command": ["effect @s slow_falling 1 1 true"]
         }
       },
       "pokeb:thunder_stone_effect": {
-        "run_command": {
+        "queue_command": {
           "command": ["effect @s haste 1 2 true"]
         }
       },
       "pokeb:sun_stone_effect": {
-        "run_command": {
+        "queue_command": {
           "command": ["effect @s fire_resistance 1 2 true"]
         }
       },
       "pokeb:moon_stone_effect": {
-        "run_command": {
+        "queue_command": {
           "command": [
             "effect @s jump_boost 1 1 true",
             "effect @s slow_falling 1 1 true"
@@ -548,12 +531,12 @@
         }
       },
       "pokeb:dawn_stone_effect": {
-        "run_command": {
+        "queue_command": {
           "command": ["effect @s jump_boost 1 2 true"]
         }
       },
       "pokeb:dusk_stone_effect": {
-        "run_command": {
+        "queue_command": {
           "command": ["effect @s saturation 1 2 true"]
         }
       },

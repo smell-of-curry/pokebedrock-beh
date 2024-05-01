@@ -1,0 +1,67 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.pokemon_fly": {
+      "initial_state": "walking",
+      "states": {
+        "flying": {
+          "transitions": [
+            {
+              "flying2": "query.has_rider && !query.is_on_ground"
+            },
+            {
+              "walking": "query.is_on_ground"
+            }
+          ],
+          "on_entry": [
+            "/effect @s speed 6 2 true",
+            "/execute if entity @p[rx=-65,rxm=-90,c=1,r=5] as @e[r=2,c=1,family=rideable,family=pokemon] run effect @s levitation 1 30 true",
+            "/execute if entity @p[rx=-35,rxm=-65,c=1,r=5] as @e[r=2,c=1,family=rideable,family=pokemon] run effect @s levitation 1 9 true",
+            "/execute if entity @p[rx=-25,rxm=-35,c=1,r=5] as @e[r=2,c=1,family=rideable,family=pokemon] run effect @s levitation 1 5 true",
+            "/execute if entity @p[rx=-15,rxm=-25,c=1,r=5] as @e[r=2,c=1,family=rideable,family=pokemon] run effect @s levitation 1 1 true",
+            "/execute if entity @p[rx=10,rxm=-15,c=1,r=5] as @e[r=2,c=1,family=rideable,family=pokemon] run effect @s levitation 1 1 true",
+            "/execute if entity @p[rx=5,rxm=-5,c=1,r=5] as @e[r=2,c=1,family=rideable,family=pokemon] run effect @s slow_falling 2 23 true",
+            "/execute if entity @p[rx=85,rxm=5,c=1,r=5] as @e[r=2,c=1,family=rideable,family=pokemon] run effect @s slow_falling 1 0 true"
+          ]
+        },
+        "flying2": {
+          "transitions": [
+            {
+              "flying": "math.random(1,10) > 8"
+            },
+            {
+              "flying_wind": "math.random(1,20) > 19"
+            }
+          ]
+        },
+        "flying_wind": {
+          "transitions": [
+            {
+              "flying": "math.random(1,10) > 8"
+            }
+          ],
+          "on_entry": ["/playsound mob.enderdragon.flap @a[r=7]"]
+        },
+        "walking": {
+          "transitions": [
+            {
+              "flying": "!query.is_on_ground"
+            },
+            {
+              "walking2": "query.is_on_ground && !query.is_sitting && math.random(1,10) > 5"
+            }
+          ],
+          "blend_transition": 0.5,
+          "on_entry": ["/effect @s slowness 2 3 true"]
+        },
+        "walking2": {
+          "transitions": [
+            {
+              "walking": "math.random(1,10) > 8"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

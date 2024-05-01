@@ -1,0 +1,21 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "pokeb:oran_berry",
+      "category": "nature"
+    },
+    "components": {
+      "minecraft:max_stack_size": 64,
+      "minecraft:icon": {
+        "texture": "oran_berry"
+      },
+      "minecraft:block_placer": {
+        "block": "pokeb:oran_berry_plant"
+      },
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.crop"
+      }
+    }
+  }
+}

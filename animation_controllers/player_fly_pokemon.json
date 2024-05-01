@@ -1,0 +1,32 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.fly_pokemon": {
+      "initial_state": "falling",
+      "states": {
+        "falling": {
+          "on_entry": [
+            "/effect @e[family=pokemon,family=rideable,family=flyable,r=2,c=1] levitation 0"
+          ],
+          "transitions": [
+            {
+              "rising": "q.is_jumping"
+            }
+          ]
+        },
+        "rising": {
+          "on_entry": [
+            "/effect @e[family=pokemon,family=rideable,family=flyable,r=2,c=1] slow_falling 100000 23 true",
+            "/effect @e[family=pokemon,family=rideable,family=flyable,r=2,c=1] speed 100000 5 true",
+            "/effect @e[family=pokemon,family=rideable,family=flyable,r=2,c=1] levitation 100000 6 true"
+          ],
+          "transitions": [
+            {
+              "falling": "!q.is_jumping"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

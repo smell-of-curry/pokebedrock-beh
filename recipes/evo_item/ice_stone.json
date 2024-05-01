@@ -1,1 +1,1 @@
-{"format_version":"1.19.62","minecraft:recipe_shaped":{"description":{"identifier":"pokeb:ice-stone"},"tags":["crafting_table"],"pattern":["III","III","III"],"key":{"I":{"item":"pokeb:ice_stone_shard"}},"result":{"item":"pokeb:ice-stone","count":1}}}
+{"format_version":"1.19.62","minecraft:recipe_shaped":{"description":{"identifier":"pokeb:ice_stone"},"tags":["crafting_table"],"pattern":["III","III","III"],"key":{"I":{"item":"pokeb:ice_stone_shard"}},"result":{"item":"pokeb:ice_stone","count":1}}}

@@ -7,7 +7,7 @@
     },
     "components": {
       "minecraft:icon": {
-        "texture": "ss_leafhammer"
+        "texture": "leaf_stone_hammer"
       },
       "minecraft:creative_category": {
         "parent": "itemGroup.name.sword"

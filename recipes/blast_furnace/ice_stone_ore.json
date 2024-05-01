@@ -1,1 +1,0 @@
-{"format_version":"1.19.62","minecraft:recipe_furnace":{"description":{"identifier":"pokeb:ice_stone_shard"},"tags":["furnace","blast_furnace"],"input":{"item":"pokeb:ice_stone_ore"},"output":"pokeb:ice_stone_shard"}}

@@ -1,0 +1,1167 @@
+{
+	"format_version": "1.20.60",
+	"minecraft:block": {
+		"description": {
+			"identifier": "pokeb:apricorn_stairs",
+			"menu_category": {
+				"category": "construction",
+				"group": "itemGroup.name.stairs"
+			},
+			"states": {
+				"pokeb:is_upside_down": [
+					false, true
+				],
+				"pokeb:direction": [ 
+					0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11
+				]
+			}
+		},
+		"components": {
+			"minecraft:geometry": {
+				"identifier": "geometry.stairs",
+				"bone_visibility": {
+					"north_down": false,
+					"north_up": false,
+					"south_down": false,
+					"south_up": false,
+					"east_down": false,
+					"east_up": false,
+					"west_down": false,
+					"west_up": false,
+					"northeast_outer_down": false,
+					"northeast_outer_up": false,
+					"southeast_outer_down": false,
+					"southeast_outer_up": false,
+					"northwest_outer_down": false,
+					"northwest_outer_up": false,
+					"southwest_outer_down": false,
+					"southwest_outer_up": false,
+					"northeast_inner_down": false,
+					"northeast_inner_up": false,
+					"northwest_inner_down": false,
+					"northwest_inner_up": false,
+					"southeast_inner_down": false,
+					"southeast_inner_up": false,
+					"southwest_inner_down": false,
+					"southwest_inner_up": false
+				}
+			},
+			"minecraft:on_player_placing": {
+				"event": "pokeb:set_direction"
+			},
+			"minecraft:flammable": {
+				"destroy_chance_modifier": 45,
+				"catch_chance_modifier": 80
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 0.5
+			},
+			"minecraft:collision_box": {
+				"origin": [-8, 0, -8],
+				"size": [16, 8, 16]
+			},
+			"minecraft:selection_box": {
+				"origin": [-8, 0, -8],
+				"size": [16, 8, 16]
+			},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "apricorn_planks",
+					"render_method": "opaque"
+				}
+			},
+			"minecraft:loot": "loot_tables/plants/trees/apricorn/apricorn_stairs.json",	
+			"minecraft:destructible_by_explosion": true,
+			"minecraft:breathability": "air",
+			"tag:wood": {},
+			"tag:stairs": {}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_state('pokeb:is_upside_down') == false",
+				"components": {
+					"minecraft:collision_box": {
+						"origin": [ -8, 0, -8 ],
+						"size": [ 16, 8, 16 ]
+					},
+					"minecraft:selection_box": {
+						"origin": [-8, 0, -8],
+						"size": [16, 16, 16]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('pokeb:is_upside_down') == true",
+				"components": {
+					"minecraft:collision_box": {
+						"origin": [ -8, 8, -8 ],
+						"size": [ 16, 8, 16 ]
+					},
+					"minecraft:selection_box": {
+						"origin": [-8, 0, -8],
+						"size": [16, 16, 16]
+					}
+				}
+			},
+			{
+				"condition": "(query.block_state('pokeb:direction') == 0) && query.block_state('pokeb:is_upside_down') == false",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.stairs",
+						"bone_visibility": {
+							"north_down": true,
+							"north_up": false,
+							"south_down": false,
+							"south_up": false,
+							"east_down": false,
+							"east_up": false,
+							"west_down": false,
+							"west_up": false,
+							"northeast_outer_down": false,
+							"northeast_outer_up": false,
+							"southeast_outer_down": false,
+							"southeast_outer_up": false,
+							"northwest_outer_down": false,
+							"northwest_outer_up": false,
+							"southwest_outer_down": false,
+							"southwest_outer_up": false,
+							"northeast_inner_down": false,
+							"northeast_inner_up": false,
+							"northwest_inner_down": false,
+							"northwest_inner_up": false,
+							"southeast_inner_down": false,
+							"southeast_inner_up": false,
+							"southwest_inner_down": false,
+							"southwest_inner_up": false
+						}
+					},
+					"tag:stairs_north": {}
+				}
+			},
+			{
+				"condition": "(query.block_state('pokeb:direction') == 0) && query.block_state('pokeb:is_upside_down') == true",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.stairs",
+						"bone_visibility": {
+							"north_down": false,
+							"north_up": true,
+							"south_down": false,
+							"south_up": false,
+							"east_down": false,
+							"east_up": false,
+							"west_down": false,
+							"west_up": false,
+							"northeast_outer_down": false,
+							"northeast_outer_up": false,
+							"southeast_outer_down": false,
+							"southeast_outer_up": false,
+							"northwest_outer_down": false,
+							"northwest_outer_up": false,
+							"southwest_outer_down": false,
+							"southwest_outer_up": false,
+							"northeast_inner_down": false,
+							"northeast_inner_up": false,
+							"northwest_inner_down": false,
+							"northwest_inner_up": false,
+							"southeast_inner_down": false,
+							"southeast_inner_up": false,
+							"southwest_inner_down": false,
+							"southwest_inner_up": false
+						}
+					},
+					"tag:stairs_north": {}
+				}
+			},
+			{
+				"condition": "(query.block_state('pokeb:direction') == 1) && query.block_state('pokeb:is_upside_down') == false",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.stairs",
+						"bone_visibility": {
+							"north_down": false,
+							"north_up": false,
+							"south_down": true,
+							"south_up": false,
+							"east_down": false,
+							"east_up": false,
+							"west_down": false,
+							"west_up": false,
+							"northeast_outer_down": false,
+							"northeast_outer_up": false,
+							"southeast_outer_down": false,
+							"southeast_outer_up": false,
+							"northwest_outer_down": false,
+							"northwest_outer_up": false,
+							"southwest_outer_down": false,
+							"southwest_outer_up": false,
+							"northeast_inner_down": false,
+							"northeast_inner_up": false,
+							"northwest_inner_down": false,
+							"northwest_inner_up": false,
+							"southeast_inner_down": false,
+							"southeast_inner_up": false,
+							"southwest_inner_down": false,
+							"southwest_inner_up": false
+						}
+					},
+					"tag:stairs_south": {}
+				}
+			},
+			{
+				"condition": "(query.block_state('pokeb:direction') == 1) && query.block_state('pokeb:is_upside_down') == true",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.stairs",
+						"bone_visibility": {
+							"north_down": false,
+							"north_up": false,
+							"south_down": false,
+							"south_up": true,
+							"east_down": false,
+							"east_up": false,
+							"west_down": false,
+							"west_up": false,
+							"northeast_outer_down": false,
+							"northeast_outer_up": false,
+							"southeast_outer_down": false,
+							"southeast_outer_up": false,
+							"northwest_outer_down": false,
+							"northwest_outer_up": false,
+							"southwest_outer_down": false,
+							"southwest_outer_up": false,
+							"northeast_inner_down": false,
+							"northeast_inner_up": false,
+							"northwest_inner_down": false,
+							"northwest_inner_up": false,
+							"southeast_inner_down": false,
+							"southeast_inner_up": false,
+							"southwest_inner_down": false,
+							"southwest_inner_up": false
+						}
+					},
+					"tag:stairs_south": {}
+				}
+			},
+			{
+				"condition": "(query.block_state('pokeb:direction') == 2) && query.block_state('pokeb:is_upside_down') == false",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.stairs",
+						"bone_visibility": {
+							"north_down": false,
+							"north_up": false,
+							"south_down": false,
+							"south_up": false,
+							"east_down": false,
+							"east_up": false,
+							"west_down": true,
+							"west_up": false,
+							"northeast_outer_down": false,
+							"northeast_outer_up": false,
+							"southeast_outer_down": false,
+							"southeast_outer_up": false,
+							"northwest_outer_down": false,
+							"northwest_outer_up": false,
+							"southwest_outer_down": false,
+							"southwest_outer_up": false,
+							"northeast_inner_down": false,
+							"northeast_inner_up": false,
+							"northwest_inner_down": false,
+							"northwest_inner_up": false,
+							"southeast_inner_down": false,
+							"southeast_inner_up": false,
+							"southwest_inner_down": false,
+							"southwest_inner_up": false
+						}
+					},
+					"tag:stairs_west": {}
+				}
+			},
+			{
+				"condition": "(query.block_state('pokeb:direction') == 2) && query.block_state('pokeb:is_upside_down') == true",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.stairs",
+						"bone_visibility": {
+							"north_down": false,
+							"north_up": false,
+							"south_down": false,
+							"south_up": false,
+							"east_down": false,
+							"east_up": false,
+							"west_down": false,
+							"west_up": true,
+							"northeast_outer_down": false,
+							"northeast_outer_up": false,
+							"southeast_outer_down": false,
+							"southeast_outer_up": false,
+							"northwest_outer_down": false,
+							"northwest_outer_up": false,
+							"southwest_outer_down": false,
+							"southwest_outer_up": false,
+							"northeast_inner_down": false,
+							"northeast_inner_up": false,
+							"northwest_inner_down": false,
+							"northwest_inner_up": false,
+							"southeast_inner_down": false,
+							"southeast_inner_up": false,
+							"southwest_inner_down": false,
+							"southwest_inner_up": false
+						}
+					},
+					"tag:stairs_west": {}
+				}
+			},
+			{
+				"condition": "(query.block_state('pokeb:direction') == 3) && query.block_state('pokeb:is_upside_down') == false",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.stairs",
+						"bone_visibility": {
+							"north_down": false,
+							"north_up": false,
+							"south_down": false,
+							"south_up": false,
+							"east_down": true,
+							"east_up": false,
+							"west_down": false,
+							"west_up": false,
+							"northeast_outer_down": false,
+							"northeast_outer_up": false,
+							"southeast_outer_down": false,
+							"southeast_outer_up": false,
+							"northwest_outer_down": false,
+							"northwest_outer_up": false,
+							"southwest_outer_down": false,
+							"southwest_outer_up": false,
+							"northeast_inner_down": false,
+							"northeast_inner_up": false,
+							"northwest_inner_down": false,
+							"northwest_inner_up": false,
+							"southeast_inner_down": false,
+							"southeast_inner_up": false,
+							"southwest_inner_down": false,
+							"southwest_inner_up": false
+						}
+					},
+					"tag:stairs_east": {}
+				}
+			},
+			{
+				"condition": "(query.block_state('pokeb:direction') == 3) && query.block_state('pokeb:is_upside_down') == true",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.stairs",
+						"bone_visibility": {
+							"north_down": false,
+							"north_up": false,
+							"south_down": false,
+							"south_up": false,
+							"east_down": false,
+							"east_up": true,
+							"west_down": false,
+							"west_up": false,
+							"northeast_outer_down": false,
+							"northeast_outer_up": false,
+							"southeast_outer_down": false,
+							"southeast_outer_up": false,
+							"northwest_outer_down": false,
+							"northwest_outer_up": false,
+							"southwest_outer_down": false,
+							"southwest_outer_up": false,
+							"northeast_inner_down": false,
+							"northeast_inner_up": false,
+							"northwest_inner_down": false,
+							"northwest_inner_up": false,
+							"southeast_inner_down": false,
+							"southeast_inner_up": false,
+							"southwest_inner_down": false,
+							"southwest_inner_up": false
+						}
+					},
+					"tag:stairs_east": {}
+				}
+			},
+			{
+				"condition": "(query.block_state('pokeb:direction') == 4) && query.block_state('pokeb:is_upside_down') == false",	//southwest
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.stairs",
+						"bone_visibility": {
+							"north_down": false,
+							"north_up": false,
+							"south_down": false,
+							"south_up": false,
+							"east_down": false,
+							"east_up": false,
+							"west_down": false,
+							"west_up": false,
+							"northeast_outer_down": false,
+							"northeast_outer_up": false,
+							"southeast_outer_down": false,
+							"southeast_outer_up": false,
+							"northwest_outer_down": false,
+							"northwest_outer_up": false,
+							"southwest_outer_down": true,
+							"southwest_outer_up": false,
+							"northeast_inner_down": false,
+							"northeast_inner_up": false,
+							"northwest_inner_down": false,
+							"northwest_inner_up": false,
+							"southeast_inner_down": false,
+							"southeast_inner_up": false,
+							"southwest_inner_down": false,
+							"southwest_inner_up": false
+						}
+					},
+					"tag:stairs_outer": {}
+				}
+			},
+			{
+				"condition": "(query.block_state('pokeb:direction') == 4) && query.block_state('pokeb:is_upside_down') == true",//southwest
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.stairs",
+						"bone_visibility": {
+							"north_down": false,
+							"north_up": false,
+							"south_down": false,
+							"south_up": false,
+							"east_down": false,
+							"east_up": false,
+							"west_down": false,
+							"west_up": false,
+							"northeast_outer_down": false,
+							"northeast_outer_up": false,
+							"southeast_outer_down": false,
+							"southeast_outer_up": false,
+							"northwest_outer_down": false,
+							"northwest_outer_up": false,
+							"southwest_outer_down": false,
+							"southwest_outer_up": true,
+							"northeast_inner_down": false,
+							"northeast_inner_up": false,
+							"northwest_inner_down": false,
+							"northwest_inner_up": false,
+							"southeast_inner_down": false,
+							"southeast_inner_up": false,
+							"southwest_inner_down": false,
+							"southwest_inner_up": false
+						}
+					},
+					"tag:stairs_outer": {}
+				}
+			},
+			{
+				"condition": "(query.block_state('pokeb:direction') == 5) && query.block_state('pokeb:is_upside_down') == false", //southeast
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.stairs",
+						"bone_visibility": {
+							"north_down": false,
+							"north_up": false,
+							"south_down": false,
+							"south_up": false,
+							"east_down": false,
+							"east_up": false,
+							"west_down": false,
+							"west_up": false,
+							"northeast_outer_down": false,
+							"northeast_outer_up": false,
+							"southeast_outer_down": true,
+							"southeast_outer_up": false,
+							"northwest_outer_down": false,
+							"northwest_outer_up": false,
+							"southwest_outer_down": false,
+							"southwest_outer_up": false,
+							"northeast_inner_down": false,
+							"northeast_inner_up": false,
+							"northwest_inner_down": false,
+							"northwest_inner_up": false,
+							"southeast_inner_down": false,
+							"southeast_inner_up": false,
+							"southwest_inner_down": false,
+							"southwest_inner_up": false
+						}
+					},
+					"tag:stairs_outer": {}
+				}
+			},
+			{
+				"condition": "(query.block_state('pokeb:direction') == 5) && query.block_state('pokeb:is_upside_down') == true", //southeast
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.stairs",
+						"bone_visibility": {
+							"north_down": false,
+							"north_up": false,
+							"south_down": false,
+							"south_up": false,
+							"east_down": false,
+							"east_up": false,
+							"west_down": false,
+							"west_up": false,
+							"northeast_outer_down": false,
+							"northeast_outer_up": false,
+							"southeast_outer_down": false,
+							"southeast_outer_up": true,
+							"northwest_outer_down": false,
+							"northwest_outer_up": false,
+							"southwest_outer_down": false,
+							"southwest_outer_up": false,
+							"northeast_inner_down": false,
+							"northeast_inner_up": false,
+							"northwest_inner_down": false,
+							"northwest_inner_up": false,
+							"southeast_inner_down": false,
+							"southeast_inner_up": false,
+							"southwest_inner_down": false,
+							"southwest_inner_up": false
+						}
+					},
+					"tag:stairs_outer": {}
+				}
+			},
+			{
+				"condition": "(query.block_state('pokeb:direction') == 6) && query.block_state('pokeb:is_upside_down') == false",  //northwest
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.stairs",
+						"bone_visibility": {
+							"north_down": false,
+							"north_up": false,
+							"south_down": false,
+							"south_up": false,
+							"east_down": false,
+							"east_up": false,
+							"west_down": false,
+							"west_up": false,
+							"northeast_outer_down": false,
+							"northeast_outer_up": false,
+							"southeast_outer_down": false,
+							"southeast_outer_up": false,
+							"northwest_outer_down": true,
+							"northwest_outer_up": false,
+							"southwest_outer_down": false,
+							"southwest_outer_up": false,
+							"northeast_inner_down": false,
+							"northeast_inner_up": false,
+							"northwest_inner_down": false,
+							"northwest_inner_up": false,
+							"southeast_inner_down": false,
+							"southeast_inner_up": false,
+							"southwest_inner_down": false,
+							"southwest_inner_up": false
+						}
+					},
+					"tag:stairs_outer": {}
+				}
+			},
+			{
+				"condition": "(query.block_state('pokeb:direction') == 6) && query.block_state('pokeb:is_upside_down') == true", //northwest
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.stairs",
+						"bone_visibility": {
+							"north_down": false,
+							"north_up": false,
+							"south_down": false,
+							"south_up": false,
+							"east_down": false,
+							"east_up": false,
+							"west_down": false,
+							"west_up": false,
+							"northeast_outer_down": false,
+							"northeast_outer_up": false,
+							"southeast_outer_down": false,
+							"southeast_outer_up": false,
+							"northwest_outer_down": false,
+							"northwest_outer_up": true,
+							"southwest_outer_down": false,
+							"southwest_outer_up": false,
+							"northeast_inner_down": false,
+							"northeast_inner_up": false,
+							"northwest_inner_down": false,
+							"northwest_inner_up": false,
+							"southeast_inner_down": false,
+							"southeast_inner_up": false,
+							"southwest_inner_down": false,
+							"southwest_inner_up": false
+						}
+					},
+					"tag:stairs_outer": {}
+				}
+			},
+			{
+				"condition": "(query.block_state('pokeb:direction') == 7) && query.block_state('pokeb:is_upside_down') == false", //northeast
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.stairs",
+						"bone_visibility": {
+							"north_down": false,
+							"north_up": false,
+							"south_down": false,
+							"south_up": false,
+							"east_down": false,
+							"east_up": false,
+							"west_down": false,
+							"west_up": false,
+							"northeast_outer_down": true,
+							"northeast_outer_up": false,
+							"southeast_outer_down": false,
+							"southeast_outer_up": false,
+							"northwest_outer_down": false,
+							"northwest_outer_up": false,
+							"southwest_outer_down": false,
+							"southwest_outer_up": false,
+							"northeast_inner_down": false,
+							"northeast_inner_up": false,
+							"northwest_inner_down": false,
+							"northwest_inner_up": false,
+							"southeast_inner_down": false,
+							"southeast_inner_up": false,
+							"southwest_inner_down": false,
+							"southwest_inner_up": false
+						}
+					},
+					"tag:stairs_outer": {}
+				}
+			},
+			{
+				"condition": "(query.block_state('pokeb:direction') == 7) && query.block_state('pokeb:is_upside_down') == true", //northeast
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.stairs",
+						"bone_visibility": {
+							"north_down": false,
+							"north_up": false,
+							"south_down": false,
+							"south_up": false,
+							"east_down": false,
+							"east_up": false,
+							"west_down": false,
+							"west_up": false,
+							"northeast_outer_down": false,
+							"northeast_outer_up": true,
+							"southeast_outer_down": false,
+							"southeast_outer_up": false,
+							"northwest_outer_down": false,
+							"northwest_outer_up": false,
+							"southwest_outer_down": false,
+							"southwest_outer_up": false,
+							"northeast_inner_down": false,
+							"northeast_inner_up": false,
+							"northwest_inner_down": false,
+							"northwest_inner_up": false,
+							"southeast_inner_down": false,
+							"southeast_inner_up": false,
+							"southwest_inner_down": false,
+							"southwest_inner_up": false
+						}
+					},
+					"tag:stairs_outer": {}
+				}
+			},
+			{
+				"condition": "(query.block_state('pokeb:direction') == 8) && query.block_state('pokeb:is_upside_down') == false", //northeast INNER
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.stairs",
+						"bone_visibility": {
+							"north_down": false,
+							"north_up": false,
+							"south_down": false,
+							"south_up": false,
+							"east_down": false,
+							"east_up": false,
+							"west_down": false,
+							"west_up": false,
+							"northeast_outer_down": false,
+							"northeast_outer_up": false,
+							"southeast_outer_down": false,
+							"southeast_outer_up": false,
+							"northwest_outer_down": false,
+							"northwest_outer_up": false,
+							"southwest_outer_down": false,
+							"southwest_outer_up": false,
+							"northeast_inner_down": true,
+							"northeast_inner_up": false,
+							"northwest_inner_down": false,
+							"northwest_inner_up": false,
+							"southeast_inner_down": false,
+							"southeast_inner_up": false,
+							"southwest_inner_down": false,
+							"southwest_inner_up": false
+						}
+					},
+					"tag:stairs_inner": {}
+				}
+			},
+			{
+				"condition": "(query.block_state('pokeb:direction') == 8) && query.block_state('pokeb:is_upside_down') == true", //northeast INNER
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.stairs",
+						"bone_visibility": {
+							"north_down": false,
+							"north_up": false,
+							"south_down": false,
+							"south_up": false,
+							"east_down": false,
+							"east_up": false,
+							"west_down": false,
+							"west_up": false,
+							"northeast_outer_down": false,
+							"northeast_outer_up": false,
+							"southeast_outer_down": false,
+							"southeast_outer_up": false,
+							"northwest_outer_down": false,
+							"northwest_outer_up": false,
+							"southwest_outer_down": false,
+							"southwest_outer_up": false,
+							"northeast_inner_down": false,
+							"northeast_inner_up": true,
+							"northwest_inner_down": false,
+							"northwest_inner_up": false,
+							"southeast_inner_down": false,
+							"southeast_inner_up": false,
+							"southwest_inner_down": false,
+							"southwest_inner_up": false
+						}
+					},
+					"tag:stairs_inner": {}
+				}
+			},
+			{
+				"condition": "(query.block_state('pokeb:direction') == 9) && query.block_state('pokeb:is_upside_down') == false", //northwest INNER
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.stairs",
+						"bone_visibility": {
+							"north_down": false,
+							"north_up": false,
+							"south_down": false,
+							"south_up": false,
+							"east_down": false,
+							"east_up": false,
+							"west_down": false,
+							"west_up": false,
+							"northeast_outer_down": false,
+							"northeast_outer_up": false,
+							"southeast_outer_down": false,
+							"southeast_outer_up": false,
+							"northwest_outer_down": false,
+							"northwest_outer_up": false,
+							"southwest_outer_down": false,
+							"southwest_outer_up": false,
+							"northeast_inner_down": false,
+							"northeast_inner_up": false,
+							"northwest_inner_down": true,
+							"northwest_inner_up": false,
+							"southeast_inner_down": false,
+							"southeast_inner_up": false,
+							"southwest_inner_down": false,
+							"southwest_inner_up": false
+						}
+					},
+					"tag:stairs_inner": {}
+				}
+			},
+			{
+				"condition": "(query.block_state('pokeb:direction') == 9) && query.block_state('pokeb:is_upside_down') == true", //northwest INNER
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.stairs",
+						"bone_visibility": {
+							"north_down": false,
+							"north_up": false,
+							"south_down": false,
+							"south_up": false,
+							"east_down": false,
+							"east_up": false,
+							"west_down": false,
+							"west_up": false,
+							"northeast_outer_down": false,
+							"northeast_outer_up": false,
+							"southeast_outer_down": false,
+							"southeast_outer_up": false,
+							"northwest_outer_down": false,
+							"northwest_outer_up": false,
+							"southwest_outer_down": false,
+							"southwest_outer_up": false,
+							"northeast_inner_down": false,
+							"northeast_inner_up": false,
+							"northwest_inner_down": false,
+							"northwest_inner_up": true,
+							"southeast_inner_down": false,
+							"southeast_inner_up": false,
+							"southwest_inner_down": false,
+							"southwest_inner_up": false
+						}
+					},
+					"tag:stairs_inner": {}
+				}
+			},
+			{
+				"condition": "(query.block_state('pokeb:direction') == 10) && query.block_state('pokeb:is_upside_down') == false", //southwest INNER
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.stairs",
+						"bone_visibility": {
+							"north_down": false,
+							"north_up": false,
+							"south_down": false,
+							"south_up": false,
+							"east_down": false,
+							"east_up": false,
+							"west_down": false,
+							"west_up": false,
+							"northeast_outer_down": false,
+							"northeast_outer_up": false,
+							"southeast_outer_down": false,
+							"southeast_outer_up": false,
+							"northwest_outer_down": false,
+							"northwest_outer_up": false,
+							"southwest_outer_down": false,
+							"southwest_outer_up": false,
+							"northeast_inner_down": false,
+							"northeast_inner_up": false,
+							"northwest_inner_down": false,
+							"northwest_inner_up": false,
+							"southeast_inner_down": false,
+							"southeast_inner_up": false,
+							"southwest_inner_down": true,
+							"southwest_inner_up": false
+						}
+					},
+					"tag:stairs_inner": {}
+				}
+			},
+			{
+				"condition": "(query.block_state('pokeb:direction') == 10) && query.block_state('pokeb:is_upside_down') == true", //southwest INNER
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.stairs",
+						"bone_visibility": {
+							"north_down": false,
+							"north_up": false,
+							"south_down": false,
+							"south_up": false,
+							"east_down": false,
+							"east_up": false,
+							"west_down": false,
+							"west_up": false,
+							"northeast_outer_down": false,
+							"northeast_outer_up": false,
+							"southeast_outer_down": false,
+							"southeast_outer_up": false,
+							"northwest_outer_down": false,
+							"northwest_outer_up": false,
+							"southwest_outer_down": false,
+							"southwest_outer_up": false,
+							"northeast_inner_down": false,
+							"northeast_inner_up": false,
+							"northwest_inner_down": false,
+							"northwest_inner_up": false,
+							"southeast_inner_down": false,
+							"southeast_inner_up": false,
+							"southwest_inner_down": false,
+							"southwest_inner_up": true
+						}
+					},
+					"tag:stairs_inner": {}
+				}
+			},
+			{
+				"condition": "(query.block_state('pokeb:direction') == 11) && query.block_state('pokeb:is_upside_down') == false", //southeast INNER
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.stairs",
+						"bone_visibility": {
+							"north_down": false,
+							"north_up": false,
+							"south_down": false,
+							"south_up": false,
+							"east_down": false,
+							"east_up": false,
+							"west_down": false,
+							"west_up": false,
+							"northeast_outer_down": false,
+							"northeast_outer_up": false,
+							"southeast_outer_down": false,
+							"southeast_outer_up": false,
+							"northwest_outer_down": false,
+							"northwest_outer_up": false,
+							"southwest_outer_down": false,
+							"southwest_outer_up": false,
+							"northeast_inner_down": false,
+							"northeast_inner_up": false,
+							"northwest_inner_down": false,
+							"northwest_inner_up": false,
+							"southeast_inner_down": true,
+							"southeast_inner_up": false,
+							"southwest_inner_down": false,
+							"southwest_inner_up": false
+						}
+					},
+					"tag:stairs_inner": {}
+				}
+			},
+			{
+				"condition": "(query.block_state('pokeb:direction') == 11) && query.block_state('pokeb:is_upside_down') == true", //southeast INNER
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.stairs",
+						"bone_visibility": {
+							"north_down": false,
+							"north_up": false,
+							"south_down": false,
+							"south_up": false,
+							"east_down": false,
+							"east_up": false,
+							"west_down": false,
+							"west_up": false,
+							"northeast_outer_down": false,
+							"northeast_outer_up": false,
+							"southeast_outer_down": false,
+							"southeast_outer_up": false,
+							"northwest_outer_down": false,
+							"northwest_outer_up": false,
+							"southwest_outer_down": false,
+							"southwest_outer_up": false,
+							"northeast_inner_down": false,
+							"northeast_inner_up": false,
+							"northwest_inner_down": false,
+							"northwest_inner_up": false,
+							"southeast_inner_down": false,
+							"southeast_inner_up": true,
+							"southwest_inner_down": false,
+							"southwest_inner_up": false
+						}
+					},
+					"tag:stairs_inner": {}
+				}
+			}
+		],
+		"events": {
+			"pokeb:set_direction": {
+				"sequence": [
+					{
+						"condition": "query.target_x_rotation>=0",
+						"set_block_state": {
+							"pokeb:direction": "query.cardinal_facing_2d-2",
+							"pokeb:is_upside_down": false
+						}
+					},
+					{
+						"condition": "query.target_x_rotation<=0",
+						"set_block_state": {
+							"pokeb:direction": "query.cardinal_facing_2d-2",
+							"pokeb:is_upside_down": true
+						}
+					},
+					{
+						"condition": "(query.cardinal_facing_2d-2) == 0",  // north
+						"trigger": {
+							"event": "pokeb:corner_check_north",
+							"target": "self"
+						}
+					},
+					{
+						"condition": "(query.cardinal_facing_2d-2) == 1",  // south
+						"trigger": {
+							"event": "pokeb:corner_check_south",
+							"target": "self"
+						}
+					},
+					{
+						"condition": "(query.cardinal_facing_2d-2) == 2",  // west
+						"trigger": {
+							"event": "pokeb:corner_check_west",
+							"target": "self"
+						}
+					},
+					{
+						"condition": "(query.cardinal_facing_2d-2) == 3",  // east
+						"trigger": {
+							"event": "pokeb:corner_check_east",
+							"target": "self"
+						}
+					}
+				]
+			},
+			"pokeb:corner_check_north": {
+				"sequence": [
+				//	OUTER CORNERS
+					{
+						"condition": "q.block_neighbor_has_any_tag(1,0,0,'stairs_north','stairs_outer') && q.block_neighbor_has_any_tag(0,0,-1,'stairs_east','stairs_outer') && q.block_neighbor_has_any_tag(1,0,0,'stairs') && q.block_neighbor_has_any_tag(0,0,-1,'stairs') && !q.block_neighbor_has_any_tag(-1,0,0,'stairs')", //northwest
+						"set_block_state": {
+							"pokeb:direction": "6"
+						}
+					},
+					{
+						"condition": "q.block_neighbor_has_any_tag(-1,0,0,'stairs_north','stairs_outer') && q.block_neighbor_has_any_tag(0,0,-1,'stairs_west','stairs_outer') && q.block_neighbor_has_any_tag(0,0,-1,'stairs') && q.block_neighbor_has_any_tag(-1,0,0,'stairs') && !q.block_neighbor_has_any_tag(1,0,0,'stairs') ", //northeast
+						"set_block_state": {
+							"pokeb:direction": "7"
+						}
+					},
+				//	INNER CORNERS
+					{
+						"condition": "q.block_neighbor_has_any_tag(1,0,0,'stairs_south','stairs_inner') && q.block_neighbor_has_any_tag(0,0,-1,'stairs_west','stairs_inner') && q.block_neighbor_has_any_tag(1,0,0,'stairs') && q.block_neighbor_has_any_tag(0,0,-1,'stairs') && !q.block_neighbor_has_any_tag(-1,0,0,'stairs_north')", //northwest
+						"set_block_state": {
+							"pokeb:direction": "9"
+						}
+					},
+					{
+						"condition": "q.block_neighbor_has_any_tag(-1,0,0,'stairs_south','stairs_inner') && q.block_neighbor_has_any_tag(0,0,-1,'stairs_east','stairs_inner') && q.block_neighbor_has_any_tag(0,0,-1,'stairs') && q.block_neighbor_has_any_tag(-1,0,0,'stairs') && !q.block_neighbor_has_any_tag(1,0,0,'stairs_north') ", //northeast
+						"set_block_state": {
+							"pokeb:direction": "8"
+						}
+					},
+				// BONUS
+					{
+						"condition": "q.block_neighbor_has_any_tag(1,0,0,'stairs_north','stairs_inner') && q.block_neighbor_has_any_tag(0,0,1,'stairs_west','stairs_inner') && q.block_neighbor_has_any_tag(1,0,0,'stairs') && q.block_neighbor_has_any_tag(0,0,1,'stairs') && !q.block_neighbor_has_any_tag(-1,0,0,'stairs_south')", //southwest
+						"set_block_state": {
+							"pokeb:direction": "10"
+						}
+					},
+					{
+						"condition": "q.block_neighbor_has_any_tag(-1,0,0,'stairs_north','stairs_inner') && q.block_neighbor_has_any_tag(0,0,1,'stairs_east','stairs_inner') && q.block_neighbor_has_any_tag(0,0,1,'stairs') && q.block_neighbor_has_any_tag(-1,0,0,'stairs') && !q.block_neighbor_has_any_tag(1,0,0,'stairs_south')", //southeast
+						"set_block_state": {
+							"pokeb:direction": "11"
+						}
+					}
+				]
+			},
+			"pokeb:corner_check_south": {
+				"sequence": [
+				//	OUTER CORNERS
+					{
+						"condition": "q.block_neighbor_has_any_tag(1,0,0,'stairs_south','stairs_outer') && q.block_neighbor_has_any_tag(0,0,1,'stairs_east','stairs_outer') && q.block_neighbor_has_any_tag(1,0,0,'stairs') && q.block_neighbor_has_any_tag(0,0,1,'stairs') && !q.block_neighbor_has_any_tag(-1,0,0,'stairs')", //southwest
+						"set_block_state": {
+							"pokeb:direction": "4"
+						}
+					},
+					{
+						"condition": "q.block_neighbor_has_any_tag(-1,0,0,'stairs_south','stairs_outer') && q.block_neighbor_has_any_tag(0,0,1,'stairs_west','stairs_outer') && q.block_neighbor_has_any_tag(0,0,1,'stairs') && q.block_neighbor_has_any_tag(-1,0,0,'stairs') && !q.block_neighbor_has_any_tag(1,0,0,'stairs')", //southeast
+						"set_block_state": {
+							"pokeb:direction": "5"
+						}
+					},
+				//	INNER CORNERS
+					{
+						"condition": "q.block_neighbor_has_any_tag(1,0,0,'stairs_north','stairs_inner') && q.block_neighbor_has_any_tag(0,0,1,'stairs_west','stairs_inner') && q.block_neighbor_has_any_tag(1,0,0,'stairs') && q.block_neighbor_has_any_tag(0,0,1,'stairs') && !q.block_neighbor_has_any_tag(-1,0,0,'stairs_south')", //southwest
+						"set_block_state": {
+							"pokeb:direction": "10"
+						}
+					},
+					{
+						"condition": "q.block_neighbor_has_any_tag(-1,0,0,'stairs_north','stairs_inner') && q.block_neighbor_has_any_tag(0,0,1,'stairs_east','stairs_inner') && q.block_neighbor_has_any_tag(0,0,1,'stairs') && q.block_neighbor_has_any_tag(-1,0,0,'stairs') && !q.block_neighbor_has_any_tag(1,0,0,'stairs_south')", //southeast
+						"set_block_state": {
+							"pokeb:direction": "11"
+						}
+					},
+				//	BONUS
+					{
+						"condition": "q.block_neighbor_has_any_tag(1,0,0,'stairs_south','stairs_inner') && q.block_neighbor_has_any_tag(0,0,-1,'stairs_west','stairs_inner') && q.block_neighbor_has_any_tag(1,0,0,'stairs') && q.block_neighbor_has_any_tag(0,0,-1,'stairs') && !q.block_neighbor_has_any_tag(-1,0,0,'stairs_north')", //northwest
+						"set_block_state": {
+							"pokeb:direction": "9"
+						}
+					},
+					{
+						"condition": "q.block_neighbor_has_any_tag(-1,0,0,'stairs_south','stairs_inner') && q.block_neighbor_has_any_tag(0,0,-1,'stairs_east','stairs_inner') && q.block_neighbor_has_any_tag(0,0,-1,'stairs') && q.block_neighbor_has_any_tag(-1,0,0,'stairs') && !q.block_neighbor_has_any_tag(1,0,0,'stairs_north') ", //northeast
+						"set_block_state": {
+							"pokeb:direction": "8"
+						}
+					}
+				]
+			},
+			"pokeb:corner_check_west": {
+				"sequence": [
+				//	OUTER CORNERS
+					{
+						"condition": "q.block_neighbor_has_any_tag(-1,0,0,'stairs_south','stairs_outer') && q.block_neighbor_has_any_tag(0,0,1,'stairs_west','stairs_outer') && q.block_neighbor_has_any_tag(0,0,1,'stairs') && q.block_neighbor_has_any_tag(-1,0,0,'stairs') && !q.block_neighbor_has_any_tag(0,0,-1,'stairs')", //southeast
+						"set_block_state": {
+							"pokeb:direction": "5"
+						}
+					},
+					{
+						"condition": "q.block_neighbor_has_any_tag(-1,0,0,'stairs_north','stairs_outer') && q.block_neighbor_has_any_tag(0,0,-1,'stairs_west','stairs_outer') && q.block_neighbor_has_any_tag(0,0,-1,'stairs') && q.block_neighbor_has_any_tag(-1,0,0,'stairs') && !q.block_neighbor_has_any_tag(0,0,1,'stairs')", //northeast
+						"set_block_state": {
+							"pokeb:direction": "7"
+						}
+					},
+				//	INNER CORNERS
+					{
+						"condition": "q.block_neighbor_has_any_tag(-1,0,0,'stairs_north','stairs_inner') && q.block_neighbor_has_any_tag(0,0,1,'stairs_east','stairs_inner') && q.block_neighbor_has_any_tag(0,0,1,'stairs') && q.block_neighbor_has_any_tag(-1,0,0,'stairs') && !q.block_neighbor_has_any_tag(1,0,0,'stairs_south')", //southeast
+						"set_block_state": {
+							"pokeb:direction": "11"
+						}
+					},
+					{
+						"condition": "q.block_neighbor_has_any_tag(-1,0,0,'stairs_south','stairs_inner') && q.block_neighbor_has_any_tag(0,0,-1,'stairs_east','stairs_inner') && q.block_neighbor_has_any_tag(0,0,-1,'stairs') && q.block_neighbor_has_any_tag(-1,0,0,'stairs') && !q.block_neighbor_has_any_tag(1,0,0,'stairs_north') ", //northeast
+						"set_block_state": {
+							"pokeb:direction": "8"
+						}
+					},
+				//	BONUS
+					{
+						"condition": "q.block_neighbor_has_any_tag(1,0,0,'stairs_north','stairs_inner') && q.block_neighbor_has_any_tag(0,0,1,'stairs_west','stairs_inner') && q.block_neighbor_has_any_tag(1,0,0,'stairs') && q.block_neighbor_has_any_tag(0,0,1,'stairs') && !q.block_neighbor_has_any_tag(-1,0,0,'stairs_south')", //southwest
+						"set_block_state": {
+							"pokeb:direction": "10"
+						}
+					},
+					{
+						"condition": "q.block_neighbor_has_any_tag(1,0,0,'stairs_south','stairs_inner') && q.block_neighbor_has_any_tag(0,0,-1,'stairs_west','stairs_inner') && q.block_neighbor_has_any_tag(1,0,0,'stairs') && q.block_neighbor_has_any_tag(0,0,-1,'stairs') && !q.block_neighbor_has_any_tag(-1,0,0,'stairs_north')", //northwest
+						"set_block_state": {
+							"pokeb:direction": "9"
+						}
+					}
+				]
+			},
+			"pokeb:corner_check_east": {
+				"sequence": [
+					{
+						"condition": "q.block_neighbor_has_any_tag(1,0,0,'stairs_south','stairs_outer') && q.block_neighbor_has_any_tag(0,0,1,'stairs_east','stairs_outer') && q.block_neighbor_has_any_tag(0,0,1,'stairs') && q.block_neighbor_has_any_tag(1,0,0,'stairs') && !q.block_neighbor_has_any_tag(0,0,-1,'stairs')", //southwest
+						"set_block_state": {
+							"pokeb:direction": "4"
+						}
+					},
+					{
+						"condition": "q.block_neighbor_has_any_tag(1,0,0,'stairs_north','stairs_outer') && q.block_neighbor_has_any_tag(0,0,-1,'stairs_east','stairs_outer') && q.block_neighbor_has_any_tag(1,0,0,'stairs') && q.block_neighbor_has_any_tag(0,0,-1,'stairs') && !q.block_neighbor_has_any_tag(0,0,1,'stairs') ", //northwest
+						"set_block_state": {
+							"pokeb:direction": "6"
+						}
+					},
+				//	INNER CORNERS
+					{
+						"condition": "q.block_neighbor_has_any_tag(1,0,0,'stairs_north','stairs_inner') && q.block_neighbor_has_any_tag(0,0,1,'stairs_west','stairs_inner') && q.block_neighbor_has_any_tag(1,0,0,'stairs') && q.block_neighbor_has_any_tag(0,0,1,'stairs') && !q.block_neighbor_has_any_tag(-1,0,0,'stairs_south')", //southwest
+						"set_block_state": {
+							"pokeb:direction": "10"
+						}
+					},
+					{
+						"condition": "q.block_neighbor_has_any_tag(1,0,0,'stairs_south','stairs_inner') && q.block_neighbor_has_any_tag(0,0,-1,'stairs_west','stairs_inner') && q.block_neighbor_has_any_tag(1,0,0,'stairs') && q.block_neighbor_has_any_tag(0,0,-1,'stairs') && !q.block_neighbor_has_any_tag(-1,0,0,'stairs_north')", //northwest
+						"set_block_state": {
+							"pokeb:direction": "9"
+						}
+					},
+				//	BONUS
+					{
+						"condition": "q.block_neighbor_has_any_tag(-1,0,0,'stairs_north','stairs_inner') && q.block_neighbor_has_any_tag(0,0,1,'stairs_east','stairs_inner') && q.block_neighbor_has_any_tag(0,0,1,'stairs') && q.block_neighbor_has_any_tag(-1,0,0,'stairs') && !q.block_neighbor_has_any_tag(1,0,0,'stairs_south')", //southeast
+						"set_block_state": {
+							"pokeb:direction": "11"
+						}
+					},
+					{
+						"condition": "q.block_neighbor_has_any_tag(-1,0,0,'stairs_south','stairs_inner') && q.block_neighbor_has_any_tag(0,0,-1,'stairs_east','stairs_inner') && q.block_neighbor_has_any_tag(0,0,-1,'stairs') && q.block_neighbor_has_any_tag(-1,0,0,'stairs') && !q.block_neighbor_has_any_tag(1,0,0,'stairs_north') ", //northeast
+						"set_block_state": {
+							"pokeb:direction": "8"
+						}
+					}
+				]
+			}
+		}
+	}
+}

@@ -1,1 +1,0 @@
-{"format_version":"1.19.62","minecraft:recipe_shaped":{"description":{"identifier":"pokeb:timed_fall"},"tags":["crafting_table"],"pattern":[" S ","SES"," S "],"key":{"S":{"item":"pokeb:poke_sand"},"E":{"item":"minecraft:ender_pearl"}},"result":{"item":"pokeb:timed_fall","count":1}}}

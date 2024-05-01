@@ -1,0 +1,15 @@
+{
+  "format_version": "1.19.62",
+  "minecraft:recipe_shaped": {
+    "description": { "identifier": "pokeb:rare_candy" },
+    "tags": ["crafting_table"],
+    "pattern": ["BPB", "SES", "BPB"],
+    "key": {
+      "B": { "item": "minecraft:blue_dye" },
+      "P": { "item": "minecraft:paper" },
+      "S": { "item": "minecraft:sugar" },
+      "E": { "item": "minecraft:experience_bottle" }
+    },
+    "result": { "item": "pokeb:rare_candy", "count": 1 }
+  }
+}

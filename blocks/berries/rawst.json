@@ -1,0 +1,229 @@
+{
+    "format_version": "1.19.30",
+    "minecraft:block": {
+        "description": {
+            "identifier": "pokeb:rawst_berry_plant",
+            "states": {
+                "wiki:crop_stage": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4
+                ]
+            }
+        },
+        "components": {
+            "minecraft:flammable": true,
+            "minecraft:light_dampening": 0,
+            "minecraft:collision_box": false,
+            "minecraft:geometry": "geometry.berry_stage_1",
+            "minecraft:loot": "loot_tables/blocks/empty_loot.json",
+            "minecraft:placement_filter": {
+                "conditions": [
+                    {
+                        "block_filter": [
+                            "dirt",
+                            "grass"
+                        ],
+                        "allowed_faces": [
+                            "up"
+                        ]
+                    }
+                ]
+            },
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "berry_plant_stage_1",
+                    "render_method": "alpha_test",
+                    "face_dimming": false,
+                    "ambient_occlusion": false
+                }
+            },
+            "minecraft:random_ticking": {
+                "on_tick": {
+                    "event": "add_stage",
+                    "target": "self"
+                }
+            },
+            "minecraft:on_interact": {
+                "event": "bonemeal",
+                "condition": "q.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:bone_meal')"
+            }
+        },
+        "events": {
+            "add_stage": {
+                "sequence": [
+                    {
+                        "condition": "q.block_state('wiki:crop_stage') < 4",
+                        "set_block_state": {
+                            "wiki:crop_stage": "q.block_state('wiki:crop_stage')+1"
+                        }
+                    }
+                ]
+            },
+            "bonemeal": {
+                "sequence": [
+                    {
+                        "condition": "q.block_state('wiki:crop_stage') < 4",
+                        "set_block_state": {
+                            "wiki:crop_stage": "q.block_state('wiki:crop_stage')+math.random(1, 3-q.block_state('wiki:crop_stage'))"
+                        }
+                    },
+                    {
+                        "run_command": {
+                            "command": [
+                                "particle minecraft:crop_growth_emitter ~ ~ ~"
+                            ],
+                            "target": "self"
+                        },
+                        "decrement_stack": {}
+                    }
+                ]
+            },
+            "pick": {
+                "set_block_state": {
+                    "wiki:crop_stage": 3
+                },
+                "spawn_loot": {
+                    "table": "loot_tables/blocks/berries/rawst.json"
+                }
+            }
+        },
+        "permutations": [
+            {
+                "condition": "q.block_state('wiki:crop_stage') == 0",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "berry_plant_stage_1",
+                            "render_method": "alpha_test",
+                            "face_dimming": false,
+                            "ambient_occlusion": false
+                        }
+                    },
+                    "minecraft:geometry": "geometry.berry_stage_1",
+                    "minecraft:selection_box": {
+                        "origin": [
+                            -8,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            2,
+                            16
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('wiki:crop_stage') == 1",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "berry_plant_stage_2",
+                            "render_method": "alpha_test",
+                            "face_dimming": false,
+                            "ambient_occlusion": false
+                        }
+                    },
+                    "minecraft:geometry": "geometry.berry_stage_2",
+                    "minecraft:selection_box": {
+                        "origin": [
+                            -8,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            5,
+                            16
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('wiki:crop_stage') == 2",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "rawst_berry_plant_stage_3",
+                            "render_method": "alpha_test",
+                            "face_dimming": false,
+                            "ambient_occlusion": false
+                        }
+                    },
+                    "minecraft:geometry": "geometry.rawst_berry_stage_3",
+                    "minecraft:selection_box": {
+                        "origin": [
+                            -8,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            9,
+                            16
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('wiki:crop_stage') == 3",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "rawst_berry_plant_stage_4",
+                            "render_method": "alpha_test",
+                            "face_dimming": false,
+                            "ambient_occlusion": false
+                        }
+                    },
+                    "minecraft:geometry": "geometry.rawst_berry_stage_4",
+                    "minecraft:selection_box": {
+                        "origin": [
+                            -8,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            13,
+                            16
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('wiki:crop_stage') == 4",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "rawst_berry_plant_stage_5",
+                            "render_method": "alpha_test",
+                            "face_dimming": false,
+                            "ambient_occlusion": false
+                        }
+                    },
+                    "minecraft:geometry": "geometry.rawst_berry_stage_5",
+                    "minecraft:selection_box": {
+                        "origin": [
+                            -8,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            13,
+                            16
+                        ]
+                    },
+                    "minecraft:on_interact": {
+                        "event": "pick"
+                    }
+                }
+            }
+        ]
+    }
+}

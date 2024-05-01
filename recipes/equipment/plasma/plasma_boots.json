@@ -1,1 +1,0 @@
-{"format_version":"1.19.62","minecraft:recipe_shaped":{"description":{"identifier":"pokeb:plasma_boots"},"tags":["crafting_table"],"pattern":["M M","M M"],"key":{"M":{"tag":"forge:gems/crystal"}},"result":{"item":"pokeb:plasma_boots","count":1}}}

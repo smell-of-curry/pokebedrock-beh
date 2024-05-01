@@ -1,0 +1,23 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "pokeb:apricorn_door",
+      "category": "construction"
+    },
+    "components": {
+      "minecraft:icon": {
+        "texture": "apricorn_door"
+      },
+      "minecraft:block_placer": {
+        "block": "pokeb:apricorn_door_tile"
+      },
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.door"
+      },
+      "minecraft:fuel": {
+        "duration": 10
+      }
+    }
+  }
+}

@@ -2,7 +2,7 @@
   "format_version": "1.16.100",
   "minecraft:item": {
     "description": {
-      "identifier": "pokeb:friendship-stone",
+      "identifier": "pokeb:friendship_stone",
       "category": "items"
     },
     "components": {

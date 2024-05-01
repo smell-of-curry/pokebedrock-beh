@@ -2,7 +2,7 @@
 	"format_version": "1.16.100",
 	"minecraft:item": {
 		"description": {
-			"identifier": "pokeb:fire-stone",
+			"identifier": "pokeb:fire_stone",
 			"category": "items"
 		},
 		"components": {

@@ -1,0 +1,19 @@
+{
+  "format_version": "1.19.62",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "pokeb:sticks_from_apricorn_planks_craft"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["", " C ", " C "],
+    "key": {
+      "C": {
+        "item": "pokeb:apricorn_planks"
+      }
+    },
+    "result": {
+      "item": "minecraft:stick",
+      "count": 4
+    }
+  }
+}

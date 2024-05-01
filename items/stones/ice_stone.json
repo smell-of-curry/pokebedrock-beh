@@ -2,7 +2,7 @@
 	"format_version": "1.16.100",
 	"minecraft:item": {
 		"description": {
-			"identifier": "pokeb:ice-stone",
+			"identifier": "pokeb:ice_stone",
 			"category": "items"
 		},
 		"components": {

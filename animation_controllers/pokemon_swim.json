@@ -1,0 +1,54 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.pokemon_swim": {
+      "initial_state": "walking",
+      "states": {
+        "swimming": {
+          "transitions": [
+            {
+              "swimming2": "query.has_rider && query.is_in_water"
+            },
+            {
+              "walking": "query.is_on_ground && !query.is_in_water"
+            }
+          ],
+          "on_entry": [
+            "/effect @s speed 6 2 true",
+            "/execute if entity @p[rx=-65,rxm=-90,c=1,r=5] as @e[r=2,c=1,family=rideable,family=pokemon] run effect @s levitation 1 30 true",
+            "/execute if entity @p[rx=-35,rxm=-65,c=1,r=5] as @e[r=2,c=1,family=rideable,family=pokemon] run effect @s levitation 1 9 true",
+            "/execute if entity @p[rx=-25,rxm=-35,c=1,r=5] as @e[r=2,c=1,family=rideable,family=pokemon] run effect @s levitation 1 5 true",
+            "/execute if entity @p[rx=-15,rxm=-25,c=1,r=5] as @e[r=2,c=1,family=rideable,family=pokemon] run effect @s levitation 1 1 true",
+            "/execute if entity @p[rx=10,rxm=-15,c=1,r=5] as @e[r=2,c=1,family=rideable,family=pokemon] run effect @s levitation 1 1 true"
+          ]
+        },
+        "swimming2": {
+          "transitions": [
+            {
+              "swimming": "math.random(1,10) > 8"
+            }
+          ]
+        },
+        "walking": {
+          "transitions": [
+            {
+              "swimming": "query.is_in_water"
+            },
+            {
+              "walking2": "query.is_on_ground && !query.is_in_water && !query.is_sitting && math.random(1,10) > 5"
+            }
+          ],
+          "blend_transition": 0.5,
+          "on_entry": ["/effect @s slowness 2 3 true"]
+        },
+        "walking2": {
+          "transitions": [
+            {
+              "walking": "math.random(1,10) > 8"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

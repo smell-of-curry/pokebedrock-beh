@@ -1,0 +1,260 @@
+
+
+{
+	"format_version": "1.20.40",
+	"minecraft:block": {
+		"description": {
+			"identifier": "pokeb:apricorn_gate",
+			"menu_category": {
+				"category": "construction",
+				"group": "itemGroup.name.gate"
+			},
+			"states": {
+				"pokeb:direction": [
+					0, 1, 2, 3
+				],
+				"pokeb:is_open": [
+					0, 1
+				]
+			}
+		},
+		"components": {
+			"minecraft:geometry": { 
+				"identifier": "geometry.gate", 
+				"bone_visibility": { 
+					"horizontal_open": false ,
+					"horizontal_closed": false ,
+					"vertical_open": false ,
+					"vertical_closed": false 
+				} 
+			},
+			"minecraft:on_player_placing": {
+				"event": "pokeb:set_direction"
+			},
+			"minecraft:flammable": {
+				"destroy_chance_modifier": 45,
+				"catch_chance_modifier": 80
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 0.5
+			},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "apricorn_planks",
+					"render_method": "opaque"
+				}
+			},
+			"minecraft:loot": "loot_tables/blocks/apricorn_gate.json",	
+			"minecraft:destructible_by_explosion": true,
+			"minecraft:breathability": "air",
+			"tag:wood": {}
+		},
+		"permutations": [
+			{
+				"condition": "(query.block_state('pokeb:direction') == 0 || query.block_state('pokeb:direction') == 1) && query.block_state('pokeb:is_open') == false",
+				"components": {
+					"minecraft:on_interact": {
+						"event": "pokeb:open_gate"
+					},
+					"minecraft:geometry": { 
+						"identifier": "geometry.gate", 
+						"bone_visibility": { 
+							"horizontal_open": false ,
+							"horizontal_closed": true ,
+							"vertical_open": false ,
+							"vertical_closed": false 
+						} 
+					},
+					"minecraft:collision_box": {
+						"origin": [
+							-8,
+							0,
+							-2
+						],
+						"size": [
+							16,
+							16,
+							4
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-8,
+							0,
+							-2
+						],
+						"size": [
+							16,
+							16,
+							4
+						]
+					}
+				}
+			},
+			{
+				"condition": "(query.block_state('pokeb:direction') == 0 || query.block_state('pokeb:direction') == 1) && query.block_state('pokeb:is_open') == true",
+				"components": {
+					"minecraft:on_interact": {
+						"event": "pokeb:close_gate"
+					},
+					"minecraft:geometry": { 
+						"identifier": "geometry.gate", 
+						"bone_visibility": { 
+							"horizontal_open": true ,
+							"horizontal_closed": false ,
+							"vertical_open": false ,
+							"vertical_closed": false 
+						} 
+					},
+					"minecraft:collision_box": {
+						"origin": [
+							-8,
+							0,
+							-2
+						],
+						"size": [
+							0,
+							0,
+							0
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-8,
+							0,
+							-2
+						],
+						"size": [
+							16,
+							16,
+							4
+						]
+					}
+				}
+			},
+			{
+				"condition": "(query.block_state('pokeb:direction') == 2 || query.block_state('pokeb:direction') == 3) && query.block_state('pokeb:is_open') == false",
+				"components": {
+					"minecraft:on_interact": {
+						"event": "pokeb:open_gate"
+					},
+					"minecraft:geometry": { 
+						"identifier": "geometry.gate", 
+						"bone_visibility": { 
+							"horizontal_open": false ,
+							"horizontal_closed": false ,
+							"vertical_open": false ,
+							"vertical_closed": true 
+						} 
+					},
+					"minecraft:collision_box": {
+						"origin": [
+							-2,
+							0,
+							-8
+						],
+						"size": [
+							4,
+							16,
+							16
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-2,
+							0,
+							-8
+						],
+						"size": [
+							4,
+							16,
+							16
+						]
+					}
+				}
+			},
+			{
+				"condition": "(query.block_state('pokeb:direction') == 2 || query.block_state('pokeb:direction') == 3) && query.block_state('pokeb:is_open') == true",
+				"components": {
+					"minecraft:on_interact": {
+						"event": "pokeb:close_gate"
+					},
+					"minecraft:geometry": { 
+						"identifier": "geometry.gate", 
+						"bone_visibility": { 
+							"horizontal_open": false ,
+							"horizontal_closed": false ,
+							"vertical_open": true ,
+							"vertical_closed": false 
+						} 
+					},
+					"minecraft:collision_box": {
+						"origin": [
+							-2,
+							0,
+							-8
+						],
+						"size": [
+							0,
+							0,
+							0
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-2,
+							0,
+							-8
+						],
+						"size": [
+							4,
+							16,
+							16
+						]
+					}
+				}
+			}
+		],
+		"events": {
+			"pokeb:set_direction": {
+				"sequence": [
+					{
+						"set_block_state": {
+							"pokeb:direction": "query.cardinal_facing_2d-2"
+						}
+					}
+				]
+			},
+			"pokeb:close_gate": {
+				"sequence": [{
+						"run_command": {
+							"command": [
+								"playsound random.door_close @a ~ ~ ~"
+							]
+						}
+					},
+					{
+						"set_block_state": {
+							"pokeb:is_open": 0
+						}
+					}
+				]
+			},
+			"pokeb:open_gate": {
+				"sequence": [{
+						"run_command": {
+							"command": [
+								"playsound random.door_open @a ~ ~ ~"
+							]
+						}
+					},
+					{
+						"set_block_state": {
+							"pokeb:is_open": 1
+						}
+					}
+				]
+			}
+		}
+	}
+}

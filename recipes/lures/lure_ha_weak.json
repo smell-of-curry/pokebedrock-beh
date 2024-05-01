@@ -1,1 +1,0 @@
-{"format_version":"1.19.62","minecraft:recipe_shapeless":{"description":{"identifier":"pokeb:lure_ha_weak"},"tags":["crafting_table"],"ingredients":[{"item":"pokeb:lure_casing_weak"},{"item":"pokeb:salac_berry"},{"item":"pokeb:petaya_berry"},{"item":"pokeb:leppa_berry"},{"item":"pokeb:apicot_berry"}],"result":{"item":"pokeb:lure_ha_weak","count":1}}}

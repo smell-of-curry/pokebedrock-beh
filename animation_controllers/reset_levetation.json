@@ -1,0 +1,29 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.reset_levitation": {
+      "initial_state": "no_rider",
+      "states": {
+        "no_rider": {
+          "transitions": [
+            {
+              "has_rider": "q.has_rider"
+            }
+          ]
+        },
+        "has_rider": {
+          "on_exit": [
+            "/effect @s levitation 0",
+            "/effect @s speed 0",
+            "/effect @s slow_falling 0"
+          ],
+          "transitions": [
+            {
+              "no_rider": "!q.has_rider"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

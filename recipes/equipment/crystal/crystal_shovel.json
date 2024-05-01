@@ -1,1 +1,0 @@
-{"format_version":"1.19.62","minecraft:recipe_shaped":{"description":{"identifier":"pokeb:crystal_shovel"},"tags":["crafting_table"],"pattern":["M","S","S"],"key":{"M":{"tag":"forge:gems/crystal"},"S":{"item":"pokeb:aluminum_ingot"}},"result":{"item":"pokeb:crystal_shovel","count":1}}}

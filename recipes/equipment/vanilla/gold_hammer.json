@@ -1,1 +1,0 @@
-{"format_version":"1.19.62","minecraft:recipe_shaped":{"description":{"identifier":"pokeb:gold_hammer"},"tags":["crafting_table"],"pattern":["MMM","MSM"," S "],"key":{"M":{"item":"minecraft:gold_ingot"},"S":{"item":"pokeb:aluminum_ingot"}},"result":{"item":"pokeb:gold_hammer","count":1}}}

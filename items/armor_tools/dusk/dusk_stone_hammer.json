@@ -7,7 +7,7 @@
     },
     "components": {
       "minecraft:icon": {
-        "texture": "ss_duskhammer"
+        "texture": "dusk_stone_hammer"
       },
       "minecraft:creative_category": {
         "parent": "itemGroup.name.sword"
@@ -197,7 +197,7 @@
             "speed": 2
           },
           {
-            "block": "ball:greatballlid",
+            "block": "pokeb:greatballlid",
             "speed": 2
           },
           {
@@ -345,11 +345,11 @@
             "speed": 2
           },
           {
-            "block": "ball:ultraball",
+            "block": "pokeb:ultraball",
             "speed": 2
           },
           {
-            "block": "ball:greatball",
+            "block": "pokeb:greatball",
             "speed": 2
           },
           {
@@ -373,7 +373,7 @@
             "speed": 2
           },
           {
-            "block": "ball:masterball",
+            "block": "pokeb:masterball",
             "speed": 2
           },
           {
@@ -381,7 +381,7 @@
             "speed": 2
           },
           {
-            "block": "ball:pokeball1",
+            "block": "pokeb:pokeball1",
             "speed": 2
           },
           {
@@ -425,7 +425,7 @@
             "speed": 2
           },
           {
-            "block": "minecraft:andesite_stairs",
+            "block": "minecraft:stone_stairs",
             "speed": 2
           },
           {
@@ -1033,7 +1033,7 @@
             "speed": 2
           },
           {
-            "block": "minecraft:diorite_stairs",
+            "block": "minecraft:stone_stairs",
             "speed": 2
           },
           {

@@ -1,1 +1,16 @@
-{"format_version":"1.19.62","minecraft:recipe_shaped":{"description":{"identifier":"pokeb:poke_ball_lid"},"tags":["crafting_table"],"pattern":["ABA"],"key":{"A":{"item":"pokeb:cooked_black_apricorn"},"B":{"item":"pokeb:cooked_blue_apricorn"}},"result":{"item":"pokeb:poke_ball_lid","count":3,"nbt":{"PokeBallID":"net_ball"}}}}
+{
+  "format_version": "1.19.62",
+  "minecraft:recipe_shaped": {
+    "description": { "identifier": "pokeb:netball_lid" },
+    "tags": ["crafting_table"],
+    "pattern": ["ABA"],
+    "key": {
+      "A": { "item": "pokeb:cooked_black_apricorn" },
+      "B": { "item": "pokeb:cooked_blue_apricorn" }
+    },
+    "result": {
+      "item": "pokeb:netball_lid",
+      "count": 3
+    }
+  }
+}

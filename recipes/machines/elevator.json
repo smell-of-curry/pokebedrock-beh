@@ -1,1 +1,0 @@
-{"format_version":"1.19.62","minecraft:recipe_shaped":{"description":{"identifier":"pokeb:elevator"},"tags":["crafting_table"],"pattern":["III","IRI","III"],"key":{"R":{"item": "minecraft:redstone"},"I":{"item": "minecraft:iron_ingot"}},"result":{"item":"pokeb:elevator","count":1}}}

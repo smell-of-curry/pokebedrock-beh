@@ -7,7 +7,7 @@
     },
     "components": {
       "minecraft:icon": {
-        "texture": "ss_moonhammer"
+        "texture": "moon_stone_hammer"
       },
       "minecraft:creative_category": {
         "parent": "itemGroup.name.sword"

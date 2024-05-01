@@ -1,0 +1,9 @@
+{
+  "format_version": "1.19.62",
+  "minecraft:recipe_furnace": {
+    "description": { "identifier": "pokeb:raw_aluminum" },
+    "tags": ["furnace", "blast_furnace"],
+    "input": { "item": "pokeb:raw_aluminum" },
+    "output": "pokeb:aluminum_ingot"
+  }
+}

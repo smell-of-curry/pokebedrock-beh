@@ -1,1 +1,0 @@
-{"format_version":"1.19.62","minecraft:recipe_shaped":{"description":{"identifier":"pokeb:water_stone_shovel"},"tags":["crafting_table"],"pattern":["M","S","S"],"key":{"M":{"item":"pokeb:water-stone"},"S":{"item":"pokeb:aluminum_ingot"}},"result":{"item":"pokeb:water_stone_shovel","count":1}}}

@@ -2,13 +2,13 @@
   "format_version": "1.16.100",
   "minecraft:item": {
     "description": {
-      "identifier": "pokeb:sun-stone",
+      "identifier": "pokeb:sun_stone",
       "category": "Nature"
     },
     "components": {
       "minecraft:max_stack_size": 64,
       "minecraft:icon": {
-				"texture": "sun-stone"
+				"texture": "sun_stone"
 			}
     }
   }

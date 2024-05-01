@@ -1,0 +1,11 @@
+{
+  "format_version": "1.19.62",
+  "minecraft:recipe_furnace": {
+    "description": {
+      "identifier": "minecraft:furnace_charcoal_from_apricorn_log_stripped"
+    },
+    "tags": ["furnace"],
+    "input": "pokeb:stripped_apricorn_log",
+    "output": "minecraft:charcoal"
+  }
+}

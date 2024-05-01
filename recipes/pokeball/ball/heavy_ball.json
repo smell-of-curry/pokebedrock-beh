@@ -1,1 +1,17 @@
-{"format_version":"1.19.62","minecraft:recipe_shapeless":{"description":{"identifier":"pokeb:poke_ball"},"tags":["crafting_table"],"ingredients":[{"type":"forge:nbt","item":"pokeb:poke_ball_lid","nbt":{"PokeBallID":"heavy_ball"}},{"item":"minecraft:stone_button"},{"item":"pokeb:silver_base"}],"result":{"item":"pokeb:poke_ball","count":1,"nbt":{"PokeBallID":"heavy_ball"}}}}
+{
+    "format_version": "1.19.62",
+    "minecraft:recipe_shapeless": {
+      "description": { "identifier": "pokeb:heavyball" },
+      "tags": ["crafting_table"],
+      "ingredients": [
+        { "item": "pokeb:heavyball_lid" },
+        { "item": "minecraft:stone_button" },
+        { "item": "pokeb:iron_base" }
+      ],
+      "result": {
+        "item": "pokeb:heavyball",
+        "count": 1
+      }
+    }
+  }
+  

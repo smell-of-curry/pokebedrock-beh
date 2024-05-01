@@ -7,7 +7,7 @@
     },
     "components": {
       "minecraft:icon": {
-        "texture": "ss_dawnshovel"
+        "texture": "dawn_stone_shovel"
       },
       "minecraft:creative_category": {
         "parent": "itemGroup.name.shovel"

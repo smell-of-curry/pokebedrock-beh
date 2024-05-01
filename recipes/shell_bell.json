@@ -1,1 +1,0 @@
-{"format_version":"1.19.62","minecraft:recipe_shaped":{"description":{"identifier":"pokeb:shell_bell"},"tags":["crafting_table"],"pattern":["MSM","S S","MSM"],"key":{"M":{"item":"pokeb:shoal_salt"},"S":{"item":"pokeb:shoal_shell"}},"result":{"item":"pokeb:shell_bell","count":1}}}

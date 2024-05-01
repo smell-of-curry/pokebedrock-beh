@@ -7,7 +7,7 @@
     },
     "components": {
       "minecraft:icon": {
-        "texture": "ss_fireaxe"
+        "texture": "fire_stone_axe"
       },
       "minecraft:creative_category": {
         "parent": "itemGroup.name.axe"

@@ -1,1 +1,0 @@
-{"format_version":"1.19.62","minecraft:recipe_shaped":{"description":{"identifier":"pokeb:poke_ball_lid"},"tags":["crafting_table"],"pattern":["XXX","# #"],"key":{"X":{"item":"pokeb:black_tumblestone"},"#":{"item":"minecraft:iron_ingot"}},"result":{"item":"pokeb:poke_ball_lid","count":5,"nbt":{"PokeBallID":"ancient_heavy_ball"}}}}

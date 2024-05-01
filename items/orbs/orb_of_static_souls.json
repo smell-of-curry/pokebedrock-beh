@@ -1,0 +1,21 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "pokeb:orb_of_static_souls",
+      "category": "items"
+    },
+    "components": {
+      "minecraft:hand_equipped": false,
+      "minecraft:allow_off_hand": true,
+      "minecraft:max_stack_size": 1,
+      "minecraft:foil": false,
+      "minecraft:icon": {
+        "texture": "orb_of_static_souls"
+      },
+      "minecraft:durability": {
+        "max_durability": 375
+      }
+    }
+  }
+}

@@ -7,7 +7,7 @@
     },
     "components": {
       "minecraft:icon": {
-        "texture": "ss_sunhammer"
+        "texture": "sun_stone_hammer"
       },
       "minecraft:creative_category": {
         "parent": "itemGroup.name.sword"

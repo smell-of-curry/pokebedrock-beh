@@ -1,1 +1,1 @@
-{"format_version":"1.19.62","minecraft:recipe_shaped":{"description":{"identifier":"pokeb:moon-stone"},"tags":["crafting_table"],"pattern":["SSS","SSS","SSS"],"key":{"S":{"item":"pokeb:moon_stone_shard"}},"result":{"item":"pokeb:moon-stone","count":1}}}
+{"format_version":"1.19.62","minecraft:recipe_shaped":{"description":{"identifier":"pokeb:moon_stone"},"tags":["crafting_table"],"pattern":["SSS","SSS","SSS"],"key":{"S":{"item":"pokeb:moon_stone_shard"}},"result":{"item":"pokeb:moon_stone","count":1}}}

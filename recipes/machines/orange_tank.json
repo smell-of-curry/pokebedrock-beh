@@ -1,1 +1,0 @@
-{"format_version":"1.19.62","minecraft:recipe_shaped":{"description":{"identifier":"pokeb:orange_tank"},"tags":["crafting_table"],"pattern":["AAA","GMG","OOO"],"key":{"A":{"item":"pokeb:aluminum_ingot"},"M":{"item":"pokeb:fossil_machine"},"G":{"item":"minecraft:gold_ingot"},"O":{"item":"minecraft:obsidian"}},"result":{"item":"pokeb:orange_tank","count":1}}}

@@ -1,1 +1,0 @@
-{"format_version":"1.19.62","minecraft:recipe_shaped":{"description":{"identifier":"pokeb:platinum_leggings"},"tags":["crafting_table"],"pattern":["MMM","M M","M M"],"key":{"M":{"tag":"forge:ingots/platinum"}},"result":{"item":"pokeb:platinum_leggings","count":1}}}

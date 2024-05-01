@@ -7,7 +7,7 @@
     },
     "components": {
       "minecraft:icon": {
-        "texture": "ss_oldrunningshoes"
+        "texture": "old_running_shoes"
       },
       "minecraft:creative_category": {
         "parent": "itemGroup.name.boots"

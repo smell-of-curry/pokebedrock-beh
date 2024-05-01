@@ -1,1 +1,0 @@
-{"format_version":"1.19.62","minecraft:recipe_shaped":{"description":{"identifier":"pokeb:green_tank"},"tags":["crafting_table"],"pattern":["AAA","EME","OOO"],"key":{"A":{"item":"pokeb:aluminum_ingot"},"M":{"item":"pokeb:fossil_machine"},"E":{"item":"minecraft:emerald"},"O":{"item":"minecraft:obsidian"}},"result":{"item":"pokeb:green_tank","count":1}}}

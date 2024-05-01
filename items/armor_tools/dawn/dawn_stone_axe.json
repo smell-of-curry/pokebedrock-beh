@@ -7,7 +7,7 @@
     },
     "components": {
       "minecraft:icon": {
-        "texture": "ss_dawnaxe"
+        "texture": "dawn_stone_axe"
       },
       "minecraft:creative_category": {
         "parent": "itemGroup.name.axe"

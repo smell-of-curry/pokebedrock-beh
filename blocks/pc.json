@@ -3,29 +3,24 @@
   "minecraft:block": {
     "description": {
       "identifier": "pokeb:pc",
-      "category": "Nature",
-      "properties": {
+      "states": {
         "wiki:rotation": [2, 3, 4, 5],
         "pokeb:is_in_use": [false, true]
       }
     },
     "events": {
       "wiki:set_rotation": {
-        "set_block_property": {
+        "set_block_state": {
           "wiki:rotation": "(query.cardinal_facing_2d)"
         }
       },
       "pokeb:set_in_use": {
-        "set_block_property": {
+        "set_block_state": {
           "pokeb:is_in_use": true
-        },
-        "run_command": {
-          "command": ["scriptevent pokeb:interact_with_pc"],
-          "target": "other"
         }
       },
       "pokeb:set_not_use": {
-        "set_block_property": {
+        "set_block_state": {
           "pokeb:is_in_use": false
         }
       }
@@ -47,8 +42,10 @@
         "size": [16, 16, 16]
       },
       "minecraft:geometry": "geometry.pc",
-      "minecraft:block_light_absorption": 0,
-      "minecraft:destroy_time": 3,
+      "minecraft:light_dampening": 0,
+        "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 3
+      },
       "minecraft:on_player_placing": {
         "event": "wiki:set_rotation"
       },
@@ -59,31 +56,31 @@
     },
     "permutations": [
       {
-        "condition": "query.block_property('wiki:rotation') == 2",
+        "condition": "query.block_state('wiki:rotation') == 2",
         "components": {
           "minecraft:rotation": [0, 180, 0]
         }
       },
       {
-        "condition": "query.block_property('wiki:rotation') == 3",
+        "condition": "query.block_state('wiki:rotation') == 3",
         "components": {
           "minecraft:rotation": [0, 0, 0]
         }
       },
       {
-        "condition": "query.block_property('wiki:rotation') == 4",
+        "condition": "query.block_state('wiki:rotation') == 4",
         "components": {
           "minecraft:rotation": [0, 270, 0]
         }
       },
       {
-        "condition": "query.block_property('wiki:rotation') == 5",
+        "condition": "query.block_state('wiki:rotation') == 5",
         "components": {
           "minecraft:rotation": [0, 90, 0]
         }
       },
       {
-        "condition": "query.block_property('pokeb:is_in_use') == true",
+        "condition": "query.block_state('pokeb:is_in_use') == true",
         "components": {
           "minecraft:material_instances": {
             "*": {
@@ -91,9 +88,9 @@
               "render_method": "alpha_test"
             }
           },
-          "minecraft:ticking": {
+          "minecraft:queued_ticking": {
             "looping": false,
-            "range": [5, 5],
+            "interval_range": [5, 5],
             "on_tick": {
               "event": "pokeb:set_not_use"
             }
@@ -101,7 +98,7 @@
         }
       },
       {
-        "condition": "query.block_property('pokeb:is_in_use') == false",
+        "condition": "query.block_state('pokeb:is_in_use') == false",
         "components": {
           "minecraft:material_instances": {
             "*": {

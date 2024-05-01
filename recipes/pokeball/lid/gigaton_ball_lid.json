@@ -1,1 +1,0 @@
-{"format_version":"1.19.62","minecraft:recipe_shaped":{"description":{"identifier":"pokeb:poke_ball_lid"},"tags":["crafting_table"],"pattern":["XXX","# #"],"key":{"X":{"item":"pokeb:black_tumblestone"},"#":{"tag":"forge:ingots/platinum"}},"result":{"item":"pokeb:poke_ball_lid","count":1,"nbt":{"PokeBallID":"gigaton_ball"}}}}

@@ -1,1 +1,0 @@
-{"format_version":"1.19.62","minecraft:recipe_shapeless":{"description":{"identifier":"pokeb:max_soup"},"tags":["crafting_table"],"ingredients":[{"item":"pokeb:max_mushroom"},{"item":"pokeb:max_mushroom"},{"item":"pokeb:max_mushroom"},{"item":"minecraft:bowl"}],"result":{"item":"pokeb:max_soup","count":1}}}

@@ -4,7 +4,7 @@
     "description": { "identifier": "pokeb:thunder_stone_boots" },
     "tags": ["crafting_table"],
     "pattern": ["M M", "M M"],
-    "key": { "M": { "item": "pokeb:thunder-stone" } },
+    "key": { "M": { "item": "pokeb:thunder_stone" } },
     "result": { "item": "pokeb:thunder_stone_boots", "count": 1 }
   }
 }

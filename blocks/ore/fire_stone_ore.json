@@ -1,20 +1,23 @@
 {
-	"format_version": "1.16.100",
-	"minecraft:block": {
-		"description": {
-			"identifier": "pokeb:fire_stone_ore",
-			"menu_category": {
-			  "group": "itemGroup.name.ore",
-			  "category": "nature"
-			}
-		},
-		"components": {
-			"minecraft:destroy_time": 0.3,
-			"minecraft:friction": 0.7,
-			"minecraft:map_color": "#FFFFFF",
-			"minecraft:explosion_resistance": 1,
-			"minecraft:block_light_absorption": 15,
-			"minecraft:block_light_emission": 0.3
-		}
-	}
+  "format_version": "1.16.100",
+  "minecraft:block": {
+    "description": {
+      "identifier": "pokeb:fire_stone_ore",
+      "menu_category": {
+        "group": "itemGroup.name.ore",
+        "category": "nature"
+      }
+    },
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 5
+      },
+      "minecraft:light_dampening": 15,
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 3.0
+      },
+      "minecraft:unit_cube": {},
+      "minecraft:loot": "loot_tables/blocks/ores/fire_stone_ore.json"
+    }
+  }
 }

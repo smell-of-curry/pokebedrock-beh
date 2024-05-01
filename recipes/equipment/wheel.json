@@ -1,1 +1,0 @@
-{"format_version":"1.19.62","minecraft:recipe_shaped":{"description":{"identifier":"pokeb:wheel"},"tags":["crafting_table"],"pattern":["SSS","SIS","SSS"],"key":{"I":{"item": "minecraft:iron_ingot"},"S":{"tag":"forge:gems/silicon"}},"result":{"item":"pokeb:wheel","count":1}}}

@@ -1,0 +1,18 @@
+{
+  "format_version": "1.19.62",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "pokeb:chest_from_apricorn_planks"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["WWW", "W W", "WWW"],
+    "key": {
+      "W": {
+        "item": "pokeb:apricorn_planks"
+      }
+    },
+    "result": {
+      "item": "minecraft:chest"
+    }
+  }
+}

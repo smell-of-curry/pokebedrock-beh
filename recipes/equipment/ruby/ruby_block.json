@@ -1,1 +1,0 @@
-{"format_version":"1.19.62","minecraft:recipe_shaped":{"description":{"identifier":"pokeb:ruby_block"},"tags":["crafting_table"],"pattern":["XXX","XXX","XXX"],"key":{"X":{"tag":"forge:gems/ruby"}},"result":{"item":"pokeb:ruby_block","count":1}}}

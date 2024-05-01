@@ -1,12 +1,12 @@
 {
   "format_version": "1.19.62",
   "minecraft:recipe_shaped": {
-    "description": { "identifier": "ball:pokeball_lid" },
+    "description": { "identifier": "pokeb:pokeball_lid" },
     "tags": ["crafting_table"],
     "pattern": ["###"],
     "key": { "#": { "item": "pokeb:cooked_red_apricorn" } },
     "result": {
-      "item": "ball:pokeball_lid",
+      "item": "pokeb:pokeball_lid",
       "count": 5
     }
   }

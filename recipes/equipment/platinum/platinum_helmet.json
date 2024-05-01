@@ -1,1 +1,0 @@
-{"format_version":"1.19.62","minecraft:recipe_shaped":{"description":{"identifier":"pokeb:platinum_helmet"},"tags":["crafting_table"],"pattern":["MMM","M M"],"key":{"M":{"tag":"forge:ingots/platinum"}},"result":{"item":"pokeb:platinum_helmet","count":1}}}
