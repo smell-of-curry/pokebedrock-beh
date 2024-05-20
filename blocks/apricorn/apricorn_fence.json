@@ -4,8 +4,8 @@
 		"description": {
 			"identifier": "pokeb:apricorn_fence",
 			"menu_category": {
-				"category": "none",
-				"group": "none"
+				"category": "construction",
+				"group": "itemGroup.name.gate"
 			},
 			"states": {
 				"pokeb:north": [
@@ -72,7 +72,7 @@
 			"minecraft:on_placed": {
 				"event": "pokeb:placed"
 			},
-			"minecraft:loot": "loot_tables/plants/trees/apricorn/apricorn_fence.json",
+			"minecraft:loot": "loot_tables/blocks/apricorn/apricorn_fence.json",
 			"minecraft:destructible_by_explosion": true,
 			"minecraft:breathability": "solid",
 			"tag:fence": {},

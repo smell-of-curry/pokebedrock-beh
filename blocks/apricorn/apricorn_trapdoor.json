@@ -45,7 +45,7 @@
 			"minecraft:on_player_placing": {
 				"event": "pokeb:set_direction"
 			},
-			"minecraft:loot": "loot_tables/blocks/apricorn_trapdoor.json",	
+			"minecraft:loot": "loot_tables/blocks/apricorn/apricorn_trapdoor.json",	
 			"minecraft:map_color": "#52221D",
 			"minecraft:breathability": "air",
 			"minecraft:destructible_by_explosion": true,

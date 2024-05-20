@@ -44,7 +44,7 @@
 					"render_method": "opaque"
 				}
 			},
-			"minecraft:loot": "loot_tables/blocks/apricorn_gate.json",	
+			"minecraft:loot": "loot_tables/blocks/apricorn/apricorn_gate.json",	
 			"minecraft:destructible_by_explosion": true,
 			"minecraft:breathability": "air",
 			"tag:wood": {}

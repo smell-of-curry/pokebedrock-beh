@@ -16,7 +16,7 @@
             "event": "bone_meal_1"
           },
           "minecraft:queued_ticking": {
-            "interval_range": [120, 180],
+            "interval_range": [1200, 1800],
             "on_tick": {
               "event": "grow_1"
             }
@@ -31,7 +31,7 @@
             "event": "bone_meal_2"
           },
           "minecraft:queued_ticking": {
-            "interval_range": [120, 180],
+            "interval_range": [1200, 1800],
             "on_tick": {
               "event": "grow_2"
             }
@@ -46,7 +46,7 @@
             "event": "bone_meal_3"
           },
           "minecraft:queued_ticking": {
-            "interval_range": [120, 180],
+            "interval_range": [1200, 1800],
             "on_tick": {
               "event": "grow_3"
             }

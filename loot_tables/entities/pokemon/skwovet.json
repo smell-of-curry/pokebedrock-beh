@@ -1,1 +1,0 @@
-{"pools":[{"rolls":1,"entries":[{"type":"item","name":"pokeb:razz_berry","weight":1,"functions":[{"function":"set_count","count":{"min":1,"max":2}}]},{"type":"item","name":"pokeb:red_apricorn","weight":0.5,"functions":[{"function":"set_count","count":{"min":1,"max":1}}]}]}]}
